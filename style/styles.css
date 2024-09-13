@@ -1,9 +1,11 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+ 
 body, html {
     height: 100%;
     font-family: Arial, sans-serif;
@@ -46,19 +48,26 @@ section {
 }
 
 .article {
-    padding: 50px;
-    background-color: white;
-    display: none; /* Hide article initially */
-    animation: fadeIn 1s ease-in-out forwards;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    text-align: left;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.article p {
+    margin: 10px;
+    text-align: left;
 }
 
-/* JavaScript for scroll event to trigger */
+.article img {
+    align-items: center;
+    display: block; 
+    justify-content: center; 
+    align-items: center; 
+    width: 500px;
+}
+
+.article ul li {
+    margin: 15px;
+}
