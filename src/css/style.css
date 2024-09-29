@@ -1,0 +1,96 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(65, 65, 65);
+    padding: 2rem 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4A90E2; /* Blue background for the nav */
+    padding: 10px 20px;
+    box-shadow: 0 5px 10px rgb(158, 158, 158);
+}
+
+/* Centered Text */
+.introduction{
+    text-align: center;
+    margin: 20px;
+}
+
+/* Article Styles */
+article {
+    background: white;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    margin: 20px auto; /* Center articles with auto margins */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    max-width: 800px; /* Limit max width for readability */
+    transition: transform 0.3s; /* Transition for hover effect */
+}
+
+article:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+article h2 {
+    margin: 0;
+    font-size: 1.8em; /* Increased font size for article titles */
+    color: #333; /* Darker text for article titles */
+}
+
+/* Image Styles */
+article img {
+    width: 100%; /* Responsive image */
+    border-radius: 10px; /* Rounded corners */
+    height: auto;
+    margin: 10px 0; /* Space around images */
+}
+
+/* Paragraph Styles */
+article p {
+    line-height: 1.6; /* Better readability */
+    color: #555; /* Lighter color for paragraph text */
+    margin: 10px 0; /* Margin for paragraphs */
+}
+
+/* Button Styles */
+button {
+    background-color: #4A90E2; /* Button color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 10px 20px; /* Increased padding for better touch targets */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    display: inline-block; /* Inline block for proper spacing */
+}
+
+button:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #4A90E2; /* Match footer with nav */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
