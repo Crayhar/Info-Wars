@@ -94,3 +94,70 @@ footer {
     width: 100%;
 }
 
+
+
+
+/*Neurolink*/
+
+#neuro-body {
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#neuro-header{
+    background-image: url(../photos/NeurolinkHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#neuro-header  #content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}  
+
+#neuro-header #neuro-header-title{
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+#dock {
+    background-image: url(../photos/dock.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#dock h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 10rem;
+    width: 70%;
+}
+
+#blackout {
+    background-image: url(../photos/black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#blackout h1 {
+    text-align: center;
+    font-size: 2rem;
+    width: 70%;
+    color: white;
+}
