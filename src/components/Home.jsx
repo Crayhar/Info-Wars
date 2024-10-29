@@ -36,9 +36,9 @@ export default function Home() {
             <h2>Oceangate diaster</h2>
             <img src="https://placehold.co/300x200" alt="placehold" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
-            
-              <button>Read More</button>
-            
+            <Link to="/header">
+                <button>Read More</button>
+            </Link>
         </article>
 
         <article>
