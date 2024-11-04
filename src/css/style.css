@@ -99,89 +99,189 @@ footer {
 
 /*Neurolink*/
 
+/* Main Container */
 #neuro-main {
     width: 100%;
-    height: 100vh; /* Make sure each section fills the full viewport height */
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
+#neuro-opener {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Opener Sections */
 .neuro-section {
     position: relative;
     width: 100%;
-    height: 100vh; /* Each section takes up full viewport height */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-#opener-1 {
-    background-image: url("../photos/NeurolinkHeader.jpg"); /* Add appropriate paths to your images */
-}
+/* Background Images */
+#opener-1 { background-image: url("../photos/NeurolinkHeader.jpg"); }
+#opener-2 { background-image: url("../photos/beach.png"); }
+#opener-3 { background-image: url("../photos/dock.png"); }
+#opener-4 { background-image: url("../photos/black.jpg"); }
+#opener-5 { background-image: url("../photos/lake.jpg"); }
+#opener-6 { background-image: url("../photos/hospital.png"); }
 
-#opener-2 {
-    background-image: url('../photos/beach.png');
-}
-
-#opener-3 {
-    background-image: url("../photos/dock.png");
-}
-
-#opener-4 {
-    background-image: url("../photos/black.jpg");
-}
-
-#opener-5 {
-    background-image: url("../photos/lake.jpg");
-}
-
-#opener-6 {
-    background-image: url("../photos/hospital.png");
-}
-
-@keyframes fadeUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Neuro Text Styling */
+.neuro-text, .neuro-text-black {
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50vw;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .neuro-text {
-    background-color: black; /* Semi-transparent black box */
-    color: white;
-    padding: 20px;
-    max-width: 80%;
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    opacity: 0; /* Start hidden */
-    transform: translateY(50px); /* Start with a small vertical offset */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+    color: rgb(0, 0, 0);
+    background-color: rgb(249, 255, 247);
 }
 
-/* Class to trigger fade up */
-.fade-up {
+.neuro-text-black {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+/* Neuro Content */
+#neuro-content {
+    background-color: rgb(245, 240, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh 5vw;
+    color: #1a1a1a;
+}
+
+/* Paragraph Containers */
+.paragraph-container, .paragraph-container-2 {
+    max-width: 800px;
+    padding: 2rem;
+    color: #333;
+    border-radius: 10px;
+    line-height: 1.6;
+    
+}
+
+.paragraph-container {
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(50, 50, 50, 0.2);
+    width: 60%;
+    margin: 4vh auto;
+}
+
+.paragraph-container-2 {
+    width: 100%;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph-container p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Background Styles for Specific Sections */
+.tech-background, .medicine-background{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.logo-background {
+    padding: 3rem;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+.tech-background { background-image: url("../photos/NeuroLink-Surgery.jpg"); }
+.medicine-background { background-image: url("../photos/Neurolink-Medicine.jpg"); }
+.logo-background {
+    background-image: url("../photos/Neuralink.jpg");
+    height: 100%;
+    background-size: contain;
+}
+
+.Link {
+    color: #5e41ff;
+    text-decoration: none;
+    margin-left: 0.4rem;
+}
+
+/* Circle Chart */
+.circle-chart {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(#4CAF50 0% 16.25%, #ddd 16.25% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.chart-labels {
+    position: absolute;
+    text-align: center;
+    color: #333;
+}
+
+.chart-labels .population {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chart-labels .remaining-pop {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555;
+}
+
+@media (min-width: 600px) {
+    #neuro-opener {
+        width: 55vw;
+    }
+    
+}
+
+/* Fade-in Animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
-
-#neuro-content{
-    background-color: black;
-    color: white;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.neuro-intro {
-    width: 80%;
-    line-height: 1.6;
-}
-
