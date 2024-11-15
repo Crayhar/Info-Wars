@@ -25,7 +25,7 @@ export default function Home() {
             <h3>Article 1</h3>
             <h2>The Neuralink changed this man’s life, can it change others too?</h2>
             <img src={neurolinkImage} alt="man in wheelchair" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
+            <p>The story about Nolan Arbaugh about how Neuralink changed his life</p>
             <Link to="/neurolink">
                 <button>Read More</button>
             </Link>
@@ -36,7 +36,7 @@ export default function Home() {
             <h2>Oceangate diaster</h2>
             <img src="https://placehold.co/300x200" alt="placehold" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
-            <Link to="/header">
+            <Link to="/oceangate">
                 <button>Read More</button>
             </Link>
         </article>
@@ -57,26 +57,6 @@ export default function Home() {
             <img src="https://placehold.co/300x200" alt="placehold" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
             <button>Read More</button>
-        </article>
-
-        <article>
-          <h2>Code examples</h2>
-
-          <img src={map} alt="image of map" />
-
-          <h3>Map zoomin</h3>
-
-          <Link to="/zoomin">
-            <button>Zoomin</button>
-          </Link>
-
-          <h3>Parallax</h3>
-
-          <img src="https://placehold.co/300x200" alt="placeholder" />
-
-          <Link to="/parallax">
-            <button>Paralax</button>
-          </Link>
         </article>
       </main>
     </>
