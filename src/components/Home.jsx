@@ -42,11 +42,11 @@ export default function Home() {
         </article>
 
         <article>
-            <h3>Aticle 3</h3>
+            <h3>Isolation to Connection: The Rise of Online Gaming in the Pandemic</h3>
             <h2>Temp 3</h2>
-            <img src="https://placehold.co/300x200" alt="placehold" />
+            <img src="src\photos\Isolation-header.jpg" alt="placehold" />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
-            <Link to="/">
+            <Link to="/isolation">
               <button>Read More</button>
             </Link>
         </article>
