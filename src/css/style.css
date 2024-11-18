@@ -324,6 +324,7 @@ footer {
         font-size: 1.6rem;
         color: #555;
         margin-bottom: 2rem;
+        font-weight: bold;
     }
 }
 .isolation-s2 {
@@ -341,5 +342,74 @@ footer {
         font-size: 1.6rem;
         color: #555;
         margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    
+    & .isolation-spinner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+    } & .spinning-image {
+        width: 150px; /* Adjust size as needed */
+        animation: spin 6s linear infinite;
+    }
+    
+    
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.isolation-s3 {
+    background-image: url("../photos/S2Background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; 
+    & p {
+        font-size: 1.6rem;
+        color: #ffffff;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+}
+.isolation-s4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem; 
+    & p {
+        font-size: 1.6rem;
+        color: #555;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+}
+.isolation-s5 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; 
+    & p {
+        font-size: 1.6rem;
+        color: #555;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+}
+.isolation-s6 {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; 
+    & p {
+        font-size: 1.6rem;
+        color: #555;
+        margin-bottom: 2rem;
+        font-weight: bold;
     }
 }
