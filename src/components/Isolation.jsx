@@ -2,6 +2,20 @@ import { React } from 'react';
 import FadeInSection from './FadeInSection';
 import AnimatedBarChart from './AnimatedBarChart';
 
+
+const correctAnswer = "B";
+
+export function checkAnswer(choice) {
+  const resultDiv = document.querySelector('.result');
+  if (choice === correctAnswer) {
+    resultDiv.innerHTML = "🎉 Correct! It was Among Us";
+    resultDiv.style.color = "lightgreen";
+  } else {
+    resultDiv.innerHTML = "❌ Wrong! The correct answer is B) Among Us.";
+    resultDiv.style.color = "red";
+  }
+}
+
 export default function Isolation() {
     return(
         <>
@@ -25,7 +39,7 @@ export default function Isolation() {
                         One standout example of this trend was Among Us, a social deduction game that exploded in popularity during the pandemic. 
                     </h2>
                     <div className="isolation-spinner-container">
-                        <img src="src\photos\spinningController.png" alt="Spinning Image" className="spinning-image"></img>
+                        <img src="src\photos\spinningController.png" alt="Spinning console controller" className="spinning-image"></img>
                     </div>
                     <p>
                         Before 2020, Among Us had a modest player base. However, the need for safe, engaging ways to socialize catapulted it to global fame, 
@@ -53,8 +67,9 @@ export default function Isolation() {
                         For Stine, a high school student, the pandemic was emotionally overwhelming. The abrupt shift to online school and separation
                         from her friends left her feeling isolated and depressed.
                     </h2>
+                    <img src="src\photos\Stine.jpg" alt="image of Stine" className="stine-image"/>
                     <p>
-                        "I felt so alone," she shared. "The days just blurred together. I missed laughing with my friends and hanging out like we used to." 
+                        "I felt so alone, the days just blurred together. I missed laughing with my friends and hanging out like we used to." 
                     </p>
                     <h2>
                         Everything changed when a friend invited her to play Among Us. What began as a casual activity quickly became a daily ritual.             
@@ -62,9 +77,6 @@ export default function Isolation() {
                     <p>
                         "It wasn’t just about the game—it was about talking, laughing, and staying close to my friends,"
                     </p>
-                    <h2>
-                        Stine explained.
-                    </h2>
                     <p>
                         "We’d spend hours on Discord, sharing everything from school gossip to our frustrations with lockdown life."
                     </p>
@@ -126,8 +138,31 @@ export default function Isolation() {
                         a testament to human creativity, resilience, and the enduring need for connection.
                     </p>
                 </section>
+                <div className="game-container">
+                    <h1>Vote Out the Impostor</h1>
+                    <p className="question">What game helped Stine get through the pandemic</p>
+                    <div className="choices">
+                        <button className="choice" onClick={() => checkAnswer('A')}>
+                            A) Minecraft
+                        </button>
+                        <button className="choice" onClick={() => checkAnswer('B')}>
+                            B) Among Us
+                        </button>
+                        <button className="choice" onClick={() => checkAnswer('C')}>
+                            C) Fortnite
+                        </button>
+                        <button className="choice" onClick={() => checkAnswer('D')}>
+                            D) Call of Duty
+                        </button>
+                    </div>
+                    <div className="result"></div>
+                </div>
+
              </main>
+             
         </>
+        
     )
+    
 
 }
