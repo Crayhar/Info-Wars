@@ -1,22 +1,63 @@
-import { React } from 'react';
+import { React, useState } from 'react';
 import FadeInSection from './FadeInSection';
 import AnimatedBarChart from './AnimatedBarChart';
 
 
-const correctAnswer = "B";
-
-export function checkAnswer(choice) {
-  const resultDiv = document.querySelector('.result');
-  if (choice === correctAnswer) {
-    resultDiv.innerHTML = "🎉 Correct! It was Among Us";
-    resultDiv.style.color = "lightgreen";
-  } else {
-    resultDiv.innerHTML = "❌ Wrong! The correct answer is B) Among Us.";
-    resultDiv.style.color = "red";
-  }
-}
+const quizzes = [
+    {
+      question: "What game helped Stine get through the pandemic?",
+      options: {
+        A: "Minecraft",
+        B: "Among Us",
+        C: "Fortnite",
+        D: "Call of Duty",
+      },
+      correct: "B",
+    },
+    {
+      question: "Which social platform, commonly used by gamers, had significant growth during the pandemic?",
+      options: {
+        A: "Facebook",
+        B: "Instagram",
+        C: "Discord",
+        D: "LinkedIn",
+      },
+      correct: "C",
+    },
+    {
+      question: "Why was it difficult for students to focus on school during the pandemic?",
+      options: {
+        A: "Lack of internet access",
+        B: "The shift to online classes",
+        C: "No support from teachers",
+        D: "Too many distractions from gaming",
+      },
+      correct: "D",
+    },
+  ];
 
 export default function Isolation() {
+
+    const [currentQuiz, setCurrentQuiz] = useState(0);
+    const [result, setResult] = useState("");
+  
+    const checkAnswer = (choice) => {
+      const correctAnswer = quizzes[currentQuiz].correct;
+      if (choice === correctAnswer) {
+        setResult("🎉 Correct!");
+      } else {
+        setResult(`❌ Wrong! The correct answer is ${correctAnswer}) ${quizzes[currentQuiz].options[correctAnswer]}.`);
+      }
+    };
+  
+    const nextQuiz = () => {
+      if (currentQuiz < quizzes.length - 1) {
+        setCurrentQuiz(currentQuiz + 1);
+        setResult(""); // Clear the result for the next question
+      } else {
+        setResult("You have completed all the quizzes! 🎉");
+      }
+    };
     return(
         <>
              <main className="isolation-main">
@@ -62,6 +103,7 @@ export default function Isolation() {
                         redefined this perception, bringing gaming into the mainstream as a way to forge bonds and bridge the gap of physical distance.
                     </p>
                 </section>
+                <img src="src\photos\FirstIlu@4x.png" alt="" className="FirstIlu" />
                 <section className="isolation-s5">
                     <h2>
                         For Stine, a high school student, the pandemic was emotionally overwhelming. The abrupt shift to online school and separation
@@ -84,25 +126,33 @@ export default function Isolation() {
                         For Stine, gaming was more than an escape—it was a lifeline that helped her manage the loneliness and stay connected.
                     </h2>
                 </section>
+                <img src="src\photos\SecondIlu@4x.png" alt="" className="SecondIlu" />
                 <section className="isolation-s6">
                     <p>
                         The gaming boom wasn’t just about playing—it was about connecting. Platforms like Discord and Steam saw unprecedented growth during the pandemic, 
                         transforming into spaces where players could socialize beyond the game itself. Discord, for instance, reported a 50% increase in active users by mid-2020, 
-                        fueled by gamers seeking new ways to engage socially (Digital Music News).
+                        fueled by gamers seeking new ways to engage socially <a href="https://www.digitalmusicnews.com/2021/01/13/twitch-growth-2020/">Digital Music News</a>.
                         Games like Minecraft allowed players to build, share, and explore collaboratively, while Fortnite hosted live concerts, blending gaming with entertainment. 
                         These virtual events became cultural moments, attracting millions of players and providing unique shared experiences in an otherwise fragmented world.
                     </p>
                 </section>
+                <img src="src\photos\SecondThirt@4x.png" alt="" className="SecondThirdIlu" />
                 <section className="isolation-s6">
-                    <p>
+                    <h2>
                         For students like Stine, the shift to remote learning posed unique challenges. With school lessons happening on the same devices used for gaming, 
-                        distractions were inevitable."It was so tempting to start a game during a boring class," she admitted. "Gaming gave me something to look forward to, 
-                        even if I knew I needed to focus on school."
+                        distractions were inevitable.
+                    </h2>
+                    <p className='comment'>
+                       "It was so tempting to start a game during a boring class," she admitted. "Gaming gave me something to look forward to, 
+                        even if I knew I needed to focus on school."                
+                     </p>
+                     <h2>
                         This blending of academic and personal spaces made it harder for many to stay disciplined. Teachers and parents often found themselves battling this 
                         dual-edged sword of technology—a necessary tool for education but also a gateway to endless distractions.
-                     </p>
+                     </h2>
                 </section>
-                <section className="isolation-s6">
+                <img src="src\photos\ThirdIlu@4x.png" alt="" className="ThirdIlu" />
+                <section className="isolation-s7">
                     <p>
                         The pandemic created a cultural shift in how gaming is perceived. What was once considered a niche hobby became a mainstream phenomenon, reshaping relationships 
                         and creating lasting communities.
@@ -112,25 +162,28 @@ export default function Isolation() {
                         fostering community and well-being.
                      </p>
                 </section>
-                <section className="isolation-s6">
+                <img src="src\photos\Connection@4x.png" alt="" className="Connection-image" />
+                <section className="isolation-s8">
                     <p>
                         The surge in gaming brought significant economic growth to the industry. The global gaming market grew by 20% in 2020, reaching a value of $180 billion,
-                        according to Newzoo. Major titles like Animal Crossing: New Horizons broke sales records, while console shortages highlighted the 
+                        according to <a href="">Newzoo</a>. Major titles like Animal Crossing: New Horizons broke sales records, while console shortages highlighted the 
                         skyrocketing demand for gaming hardware.
                         The industry also saw an expansion of esports and streaming, with platforms like YouTube Gaming and Twitch attracting millions of new viewers. This economic 
                         growth reflected gaming’s transformation from a casual activity to a vital cultural and social force.
                      </p>
                 </section>
-                <section className="isolation-s6">
-                    <p>
+                <section className="isolation-s9">
+                    <h2>
                         Gaming during the pandemic offered more than just fun—it became a tool for emotional resilience. Research shows that gaming can reduce stress and anxiety, 
                         offering a structured way to engage with others and escape the challenges of daily life.
                         For players like Stine, gaming helped mitigate the mental health toll of isolation. Cooperative and multiplayer games provided not only entertainment but a 
                         sense of accomplishment and belonging.
+                    </h2>
+                    <p>
                         "When I was playing with friends, it felt like things were normal again," Stine shared. "Those moments really got me through the tough days."
-                     </p>
+                    </p>
                 </section>
-                <section className="isolation-s6">
+                <section className="isolation-s10">
                     <p>
                         The rise of online gaming during COVID-19 demonstrates its power to connect and uplift people in difficult times. From creating virtual meeting spaces 
                         to supporting mental health, gaming proved to be more than just an escape—it became a lifeline for millions.
@@ -138,24 +191,29 @@ export default function Isolation() {
                         a testament to human creativity, resilience, and the enduring need for connection.
                     </p>
                 </section>
-                <div className="game-container">
-                    <h1>Vote Out the Impostor</h1>
-                    <p className="question">What game helped Stine get through the pandemic</p>
+                <div className="game-container" style={{ fontFamily: "Arial", padding: "20px" }}>
+                    <h1>Quiz</h1>
+                    <p className="question">{quizzes[currentQuiz].question}</p>
                     <div className="choices">
-                        <button className="choice" onClick={() => checkAnswer('A')}>
-                            A) Minecraft
+                        {Object.entries(quizzes[currentQuiz].options).map(([key, value]) => (
+                        <button
+                            key={key}
+                            className="choice"
+                            onClick={() => checkAnswer(key)}
+                            style={{ margin: "5px", padding: "10px 20px", cursor: "pointer" }}
+                        >
+                            {key}) {value}
                         </button>
-                        <button className="choice" onClick={() => checkAnswer('B')}>
-                            B) Among Us
-                        </button>
-                        <button className="choice" onClick={() => checkAnswer('C')}>
-                            C) Fortnite
-                        </button>
-                        <button className="choice" onClick={() => checkAnswer('D')}>
-                            D) Call of Duty
-                        </button>
+                        ))}
                     </div>
-                    <div className="result"></div>
+                    <div className="result" style={{ marginTop: "20px", fontSize: "18px", color: result.includes("Correct") ? "lightgreen" : "red" }}>
+                        {result}
+                    </div>
+                    {currentQuiz < quizzes.length - 1 && result && (
+                        <button onClick={nextQuiz} style={{ marginTop: "20px", padding: "10px 20px", cursor: "pointer" }}>
+                        Next Question
+                        </button>
+                    )}
                 </div>
 
              </main>

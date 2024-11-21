@@ -53,7 +53,11 @@ const AnimatedBarChart = () => {
     },
   };
 
-  return <Bar data={data} options={options} />;
+  return (
+    <div className="animated-bar-chart-container">
+      <Bar data={data} options={options} />
+    </div>
+  );
 };
 
 export default AnimatedBarChart;
