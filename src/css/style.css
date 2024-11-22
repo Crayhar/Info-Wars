@@ -275,7 +275,6 @@ footer {
     
 }
 
-/* Fade-in Animation */
 .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
@@ -287,7 +286,11 @@ footer {
     transform: translateY(0);
 }
 
-/* Isolation */
+/* --------------------------------------------------------------------------Isolation-------------------------------------------------------------------------- */
+.isolation-body{
+    background-color: #ece0e0;
+}
+
 .isolation-main {
     display: flex;
     flex-direction: column;
@@ -295,6 +298,7 @@ footer {
     max-width: 800px;
     justify-content: center;
     margin: 0 auto; 
+    background-color: white;
 }
 .isolation-header {
     background-image: url("../photos/isolation-header.jpg");
@@ -486,6 +490,9 @@ footer {
         padding: 1rem;
         border-radius: 1rem;
     }
+    & .newzoo {
+        color: rgb(206, 206, 206);
+    }
 }
 .isolation-s9 {
     display: flex;
@@ -525,7 +532,7 @@ footer {
     margin-bottom: 4rem;
   }
   
-  /* Question text */
+/
   .question {
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -535,7 +542,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
-  /* Button styles for choices */
+  
   .choices .choice {
     display: inline-block;
     margin: 5px;
@@ -553,14 +560,12 @@ footer {
     background-color: #0056b3;
   }
   
-  /* Result text */
   .result {
     margin-top: 20px;
     font-size: 1.2em;
     font-weight: bold;
   }
   
-  /* Button for moving to the next quiz */
   button {
     padding: 10px 20px;
     font-size: 1em;
@@ -576,7 +581,44 @@ footer {
     background-color: #218838;
   }
   
-  /* Completion message */
+
   .result.complete {
     color: #28a745;
   }
+  @media (min-width: 550px) {
+    .isolation-s5 {
+        & .stine-image {
+            width:50%;
+           height: 50%;
+           align-self: center;
+        }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .isolation-s5 {
+        border: #1a1a1a 0.2rem solid;
+        border-radius: 2rem;
+        position: relative;
+        margin: 0 1rem 0 1rem;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 2rem; 
+        & .Stine-pre   {
+            align-self: center;
+            width: 50%;
+        }
+        & p {
+            font-size: 1.6rem;
+            color: #333;
+            margin-bottom: 2rem;
+            font-weight: bold;  
+            font-style: italic; 
+        }
+        & .stine-image {
+            width:50%;
+            margin: 2rem 0;
+            border-radius: 1rem;
+        }
+    }
+}

@@ -60,6 +60,9 @@ export default function Isolation() {
     };
     return(
         <>
+        <body className='isolation-body'>
+            
+        
              <main className="isolation-main">
                 <header className="isolation-header"> 
                     <h1>Isolation to Connection: The Rise of Online Gaming in the Pandemic</h1>
@@ -105,7 +108,7 @@ export default function Isolation() {
                 </section>
                 <img src="src\photos\FirstIlu@4x.png" alt="" className="FirstIlu" />
                 <section className="isolation-s5">
-                    <h2>
+                    <h2 className='Stine-pre'>
                         For Stine, a high school student, the pandemic was emotionally overwhelming. The abrupt shift to online school and separation
                         from her friends left her feeling isolated and depressed.
                     </h2>
@@ -165,9 +168,14 @@ export default function Isolation() {
                 <img src="src\photos\Connection@4x.png" alt="" className="Connection-image" />
                 <section className="isolation-s8">
                     <p>
-                        The surge in gaming brought significant economic growth to the industry. The global gaming market grew by 20% in 2020, reaching a value of $180 billion,
-                        according to <a href="">Newzoo</a>. Major titles like Animal Crossing: New Horizons broke sales records, while console shortages highlighted the 
-                        skyrocketing demand for gaming hardware.
+                        The surge in gaming brought significant economic growth to the industry.                    
+                     </p>
+                     <p>
+                        The global gaming market grew by 20% in 2020, reaching a value of $180 billion,
+                        according to <a className='newzoo' href="https://newzoo.com/resources/blog/the-games-market-in-2022-the-year-in-numbers">Newzoo</a>. Major titles like Animal Crossing: New Horizons broke sales records, while console shortages highlighted the 
+                        skyrocketing demand for gaming hardware. 
+                     </p>
+                     <p>
                         The industry also saw an expansion of esports and streaming, with platforms like YouTube Gaming and Twitch attracting millions of new viewers. This economic 
                         growth reflected gaming’s transformation from a casual activity to a vital cultural and social force.
                      </p>
@@ -183,6 +191,28 @@ export default function Isolation() {
                         "When I was playing with friends, it felt like things were normal again," Stine shared. "Those moments really got me through the tough days."
                     </p>
                 </section>
+                <div className="game-container">
+                    <h1>Quiz</h1>
+                    <p className="question">{quizzes[currentQuiz].question}</p>
+                    <div className="choices">
+                        {Object.entries(quizzes[currentQuiz].options).map(([key, value]) => (
+                        <button
+                            key={key}
+                            className="choice"
+                            onClick={() => checkAnswer(key)}>
+                            {key}) {value}
+                        </button>
+                        ))}
+                    </div>
+                    <div className="result" >
+                        {result}
+                    </div>
+                    {currentQuiz < quizzes.length - 1 && result && (
+                        <button onClick={nextQuiz} >
+                        Next Question
+                        </button>
+                    )}
+                </div>
                 <section className="isolation-s10">
                     <p>
                         The rise of online gaming during COVID-19 demonstrates its power to connect and uplift people in difficult times. From creating virtual meeting spaces 
@@ -191,33 +221,9 @@ export default function Isolation() {
                         a testament to human creativity, resilience, and the enduring need for connection.
                     </p>
                 </section>
-                <div className="game-container" style={{ fontFamily: "Arial", padding: "20px" }}>
-                    <h1>Quiz</h1>
-                    <p className="question">{quizzes[currentQuiz].question}</p>
-                    <div className="choices">
-                        {Object.entries(quizzes[currentQuiz].options).map(([key, value]) => (
-                        <button
-                            key={key}
-                            className="choice"
-                            onClick={() => checkAnswer(key)}
-                            style={{ margin: "5px", padding: "10px 20px", cursor: "pointer" }}
-                        >
-                            {key}) {value}
-                        </button>
-                        ))}
-                    </div>
-                    <div className="result" style={{ marginTop: "20px", fontSize: "18px", color: result.includes("Correct") ? "lightgreen" : "red" }}>
-                        {result}
-                    </div>
-                    {currentQuiz < quizzes.length - 1 && result && (
-                        <button onClick={nextQuiz} style={{ marginTop: "20px", padding: "10px 20px", cursor: "pointer" }}>
-                        Next Question
-                        </button>
-                    )}
-                </div>
 
              </main>
-             
+             </body>
         </>
         
     )
