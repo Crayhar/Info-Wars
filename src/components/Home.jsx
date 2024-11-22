@@ -3,6 +3,7 @@ import '../css/style.css';
 // Images
 import neurolinkImage from "../photos/image of guy.png"; // Renamed for consistency
 import map from "../photos/map.jpg";
+import ScrollToTop from "../components/ScrollToTop";
 
 // Links
 import { Link } from "react-router-dom"; // Import Link
@@ -42,9 +43,10 @@ export default function Home() {
         </article>
 
         <article>
-            <h3>Isolation to Connection: The Rise of Online Gaming in the Pandemic</h3>
-            <h2>Temp 3</h2>
-            <img src="src\photos\Isolation-header.jpg" alt="placehold" />
+            <h1>XL-Story</h1>
+            <img src="src\photos\Article3\Isolation-header.jpg" alt="placehold" />
+            <h2>Isolation to Connection: The Rise of Online Gaming in the Pandemic</h2>
+            <h3>Animasjon, Statistikk, Quiz</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
             <Link to="/isolation">
               <button>Read More</button>
