@@ -16,11 +16,11 @@ const quizzes = [
       correct: "B",
     },
     {
-      question: "Which social platform, commonly used by gamers, had significant growth during the pandemic?",
+      question: "Which streaming platform, commonly used by gamers, had significant growth during the pandemic?",
       options: {
         A: "Facebook",
         B: "Instagram",
-        C: "Discord",
+        C: "Twitch",
         D: "LinkedIn",
       },
       correct: "C",

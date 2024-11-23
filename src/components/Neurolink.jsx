@@ -54,7 +54,6 @@ export default function Neurolink() {
                         This is what happened to Noland Arbaugh in 2016. After diving in the water, he hit his head hard on something under the water,
                         causing paralysis from the neck down. The Neuralink changed this man’s life; can it change others too?
                     </p>
-                    <div className="logo-background"></div>
                 </div>
                 <div className="tech-background">
                     <FadeInSection>
@@ -65,7 +64,7 @@ export default function Neurolink() {
                             </p>
                             <p>
                                 However, a savior came to Arbaugh's rescue by the name of
-                                <a className="Link" href="https://neuralink.com/" rel="noopener noreferrer">Neuralink</a>.
+                                <a className="Link" href="https://neuralink.com/">Neuralink</a>.
                                 In late 2023, they were ready to give the Neuralink to people for the first time. Arbaugh heard about it through a friend
                                 and found out that he might be the first person ever to have a Neuralink.
                             </p>
@@ -97,7 +96,7 @@ export default function Neurolink() {
                 </div>
                 <div className="paragraph-container-2">
                     <p>
-                        According to <a className="Link" href="https://www.who.int/health-topics/disability#tab=tab_1" rel="noopener noreferrer">WHO</a>,
+                        According to <a className="Link" href="https://www.who.int/health-topics/disability#tab=tab_1">WHO.int</a>,
                         1.3 billion people in the world are considered disabled.
                     </p>
                     <div className="circle-chart">

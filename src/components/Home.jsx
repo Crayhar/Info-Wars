@@ -1,6 +1,4 @@
 import '../css/style.css';
-import neurolinkImage from "../photos/image of guy.png"; 
-import map from "../photos/map.jpg";
 import { Link } from "react-router-dom"; 
 
 export default function Home() {
@@ -20,7 +18,7 @@ export default function Home() {
       <main>
         <article>
             <h3>News story 1</h3>            
-            <img src={neurolinkImage} alt="man in wheelchair" />
+            <img src="src\photos\Article1\image of guy.png" alt="man in wheelchair" />
             <h2>A New Frontier in Overcoming Disability</h2>
             <p>
               After paralysis from a swimming accident, Noland Arbaugh regained independence through Neuralink, a brain-computer interface enabling device control via thought. 
@@ -43,7 +41,7 @@ export default function Home() {
 
         <article>
             <h3>Long read</h3>
-            <img src="src\photos\Article3\Isolation-header.jpg" alt="placehold" />
+            <img src="src\photos\Article3\Isolation-header.jpg" alt="man infront of a gaming pc" />
             <h2>The Rise of Online Gaming in the Pandemic</h2>
             <p>
               The pandemic caused a surge in online gaming, helping people stay connected while isolated. Games like Among Us became social lifelines, fostering emotional resilience,
