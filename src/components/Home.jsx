@@ -7,7 +7,7 @@ export default function Home() {
       <header>
         <nav>
           <h1>Eksamen i Kommunikasjonsdesign Høst 2024</h1>
-          <h2>Kandidatnummer: 455, 474, C og D</h2>
+          <h2>Kandidatnummer: 455, 474, 477 og D</h2>
         </nav>
         <section className="introduction">
           <h1>Welcome to our exam project. We have created 4 different news articles, which have their own personality and touch. Using different modalities and elements, like maps, 
