@@ -10,12 +10,11 @@ import {
   Legend,
 } from "chart.js";
 
-// Register required Chart.js components
+
 ChartJS.register(BarElement, CategoryScale, LinearScale, Title, Tooltip, Legend);
 
 const AnimatedBarChart = () => {
-  const [progress, setProgress] = useState([0, 0]); // Initial heights
-
+  const [progress, setProgress] = useState([0, 0]); 
   useEffect(() => {
     let interval = setInterval(() => {
       setProgress((prev) => {
@@ -26,7 +25,7 @@ const AnimatedBarChart = () => {
         clearInterval(interval);
         return prev;
       });
-    }, 100); // Adjust interval speed for smooth animation
+    }, 100); 
   }, []);
 
   const data = {
@@ -34,7 +33,7 @@ const AnimatedBarChart = () => {
     datasets: [
       {
         label: "Player Count (Millions)",
-        data: progress, // Use the animated progress data
+        data: progress, 
         backgroundColor: ["blue", "orange"],
       },
     ],

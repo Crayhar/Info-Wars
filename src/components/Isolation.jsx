@@ -54,7 +54,7 @@ export default function Isolation() {
     const nextQuiz = () => {
       if (currentQuiz < quizzes.length - 1) {
         setCurrentQuiz(currentQuiz + 1);
-        setResult(""); // Clear the result for the next question
+        setResult(""); 
       } else {
         setResult("You have completed all the quizzes! 🎉");
       }
@@ -66,7 +66,8 @@ export default function Isolation() {
         
              <main className="isolation-main">
                 <header className="isolation-header"> 
-                    <h1>Isolation to Connection: The Rise of Online Gaming in the Pandemic</h1>
+                    <h1>Isolation to Connection </h1>
+                    <h2>The Rise of Online Gaming in the Pandemic</h2>
                 </header>
                 <section className="isolation-s1">
                     <h2>
@@ -87,7 +88,7 @@ export default function Isolation() {
                     </h2>
                 </section>
                     <div className="isolation-spinner-container">
-                        <img src="src\photos\Article3\IconController@4x.png" alt="Spinning console controller" className="spinning-image"></img>
+                        <img src="src\photos\Article3\IconController@4x.png" alt="Icon of a spinning controller" className="spinning-image"></img>
                     </div>
                 <section className="isolation-s2">
                     <h3>The Pandemic's Surprise Star</h3>
@@ -100,7 +101,7 @@ export default function Isolation() {
                 <div className="image-animation-container">
                         <img
                         src="src/photos/Article3/AmongUsIcon@4x.png"
-                        alt=""
+                        alt="Among us character runing across screen"
                         className="moving-image"
                         />
                     </div>
@@ -113,7 +114,7 @@ export default function Isolation() {
                 <div className="image-animation-container-2">
                         <img
                         src="src/photos/Article3/AmongUsIconFlipped@4x.png"
-                        alt=""
+                        alt="Among us character runing across screen"
                         className="moving-image-2"
                         />
                     </div>         
@@ -128,7 +129,7 @@ export default function Isolation() {
                         redefined this perception, bringing gaming into the mainstream as a way to forge bonds and bridge the gap of physical distance.
                     </p>
                 </section>     
-                <img src="src\photos\Article3\Icon@4x.png" alt="" className="FirstIlu" />              
+                <img src="src\photos\Article3\Icon@4x.png" alt="A PC-screen with a cable taking it down to the next section" className="FirstIlu" />              
                 <section className="isolation-s5">
                     <h2 className='Stine-pre'>
                         For Stine, a high school student, the pandemic was emotionally overwhelming. The abrupt shift to online school and separation
@@ -160,7 +161,7 @@ export default function Isolation() {
                         For Stine, gaming was more than an escape—it was a lifeline that helped her manage the loneliness and stay connected.
                     </h2>
                 </section>
-                <img src="src\photos\Article3\Icon1@4x.png" alt="" className="SecondIlu" />
+                <img src="src\photos\Article3\Icon1@4x.png" alt="a cloud of gaming equipment" className="SecondIlu" />
                 <section className="isolation-s6">
                     <h3>Gaming as a Social Hub</h3>
                     <p>
@@ -168,15 +169,15 @@ export default function Isolation() {
                         transforming into spaces where players could socialize beyond the game itself. 
                     </p>
                     <p>
-                        Discord, for instance, reported a 50% increase in active users by mid-2020, 
-                        fueled by gamers seeking new ways to engage socially <a className='link' href="https://www.digitalmusicnews.com/2021/01/13/twitch-growth-2020/">DigitalMusicNews.com</a>.
+                        Twitch, for instance, reported a 83% increase in active users by mid-2020, 
+                        fueled by gamers seeking new ways to engage socially and be entertained <a className='link' href="https://www.digitalmusicnews.com/2021/01/13/twitch-growth-2020/">DigitalMusicNews.com</a>.
                         Games like Minecraft allowed players to build, share, and explore collaboratively, while Fortnite hosted live concerts, blending gaming with entertainment.                        
                     </p>
                     <p>
                     These virtual events became cultural moments, attracting millions of players and providing unique shared experiences in an otherwise fragmented world.
                     </p>
                 </section>
-                <img src="src\photos\Article3\Icon2@4x.png" alt="" className="SecondThirdIlu" />
+                <img src="src\photos\Article3\Icon2@4x.png" alt="a icon of the connection of the world" className="SecondThirdIlu" />
                 <section className="isolation-s6">
                     <h3>Balancing School and Play</h3>
                     <h2>
@@ -194,7 +195,7 @@ export default function Isolation() {
                         dual-edged sword of technology—a necessary tool for education but also a gateway to endless distractions.
                      </h2>
                 </section>
-                <img src="src\photos\Article3\Icon3@4x.png" alt="" className="ThirdIlu" />
+                <img src="src\photos\Article3\Icon3@4x.png" alt="a keyboard" className="ThirdIlu" />
                 <section className="isolation-s7">
                     <h3>Gaming’s Lasting Impact</h3>
                     <p>
@@ -205,21 +206,23 @@ export default function Isolation() {
                         For many, the habits formed during lockdown persisted even after restrictions eased. Multiplayer games like Call of Duty: Warzone and League of Legends continued 
                         to thrive, as players discovered that gaming could be a way to stay connected even when traditional social opportunities returned.                    
                      </p>
+                     <img src="src\photos\Article3\IconGraph@4x.png" alt="a graph" className='IconGraph'/>
                      <p>
                         Industry experts predict that the pandemic's gaming boom has permanently altered the entertainment landscape, with a growing recognition of gaming’s role in 
                         fostering community and well-being.
                      </p>
                 </section>
-                <img src="src\photos\Article3\Connection@4x.png" alt="" className="Connection-image" />
+                <img src="src\photos\Article3\Connection@4x.png" alt="a icon of people connecting" className="Connection-image" />
                 <section className="isolation-s8">
                     <p>
                         The surge in gaming brought significant economic growth to the industry.                    
                     </p>                                 
                     <p>
                         The global gaming market grew by 20% in 2020, reaching a value of $180 billion,
-                        according to <a className='link' href="https://newzoo.com/resources/blog/the-games-market-in-2022-the-year-in-numbers">Newzoo.com</a>. Major titles like Animal Crossing: New Horizons broke sales records, while console shortages highlighted the 
+                        according to <a className='link' href="https://newzoo.com/resources/blog/game-engagement-during-covid-pandemic-adds-15-billion-to-global-games-market-revenue-forecast">Newzoo.com</a>. Major titles like Animal Crossing: New Horizons broke sales records, while console shortages highlighted the 
                         skyrocketing demand for gaming hardware. 
                     </p>
+                    <img src="src\photos\Article3\GlobalGamesMarketChart.png" alt="a graph of global games market forcast" className='GGMF-image' />
                     <p>
                         The industry also saw an expansion of esports and streaming, with platforms like YouTube Gaming and Twitch attracting millions of new viewers. This economic 
                         growth reflected gaming’s transformation from a casual activity to a vital cultural and social force.
@@ -231,6 +234,7 @@ export default function Isolation() {
                         Gaming during the pandemic offered more than just fun—it became a tool for emotional resilience. Research shows that gaming can reduce stress and anxiety, 
                         offering a structured way to engage with others and escape the challenges of daily life.                       
                     </h2>
+                        <img src="src\photos\Article3\IconBridge@4x.png" alt="two islands, with a bridge made out of controllers" className='IconBridge'/>
                     <h2>
                         For players like Stine, gaming helped mitigate the mental health toll of isolation. Cooperative and multiplayer games provided not only entertainment but a 
                         sense of accomplishment and belonging.

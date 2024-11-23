@@ -1,5 +1,6 @@
 import { React } from 'react';
 import FadeInSection from './FadeInSection';
+import { Link } from 'react-router-dom';
 
 export default function Neurolink() {
     return (
@@ -118,6 +119,9 @@ export default function Neurolink() {
                     </p>
                 </div>
             </section>
+            <Link to="/" className="home-button">
+                    Home
+            </Link> 
         </main>
     );
 }

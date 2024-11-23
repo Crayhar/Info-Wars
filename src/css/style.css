@@ -6,97 +6,87 @@ body {
     background-color: #f5f5f5;
     color: #333;
 }
-
-h1 {
-    font-size: 2rem;
-    color: rgb(65, 65, 65);
-    padding: 2rem 0;
-}
-
-/* Navigation Bar */
-nav {
+header {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: #4A90E2; /* Blue background for the nav */
-    padding: 10px 20px;
-    box-shadow: 0 5px 10px rgb(158, 158, 158);
+    & nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #4A90E2;
+        box-shadow: 0 5px 10px rgb(158, 158, 158);
+        width: 100vw;
+        & h1 {
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+        }
+        & h2 {
+            font-size: 2rem;
+            color: rgb(65, 65, 65);       
+        }
+    }
+    & .introduction{
+        background-color: rgb(230, 230, 230);
+        text-align: center;
+        margin: 20px;
+        padding: 1rem;
+        border-radius: 2rem;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3); 
+        max-width: 40vw;
+        
+    }
 }
 
-/* Centered Text */
-.introduction{
-    text-align: center;
-    margin: 20px;
+main {
+    display: flex;
+
+    & article {
+        background: white;
+        border-radius: 10px; 
+        padding: 20px;
+        margin: 20px auto; 
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+        width: 20vw;
+        transition: transform 0.3s; 
+        & article:hover {
+            transform: scale(1.02);
+        } 
+        & h2 {
+            margin: 0;
+            font-size: 1.8em; 
+            color: #333;
+        }
+        & img {
+            width: 100%; 
+            height: 20v;
+            border-radius: 10px;    
+            margin: 10px 0;
+        }
+        & p {
+            line-height: 1.6; 
+            color: #555; 
+            margin: 10px 0;
+            font-weight: 600;
+        } 
+    } 
+    & button {
+        background-color: #4A90E2; 
+        color: white; 
+        border: none;
+        padding: 10px 20px; 
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.6em;
+        transition: background-color 0.3s, transform 0.2s; 
+        & :hover {
+            background-color: #357ABD; 
+            transform: translateY(-2px); 
+        }
+        
+
+    }
 }
-
-/* Article Styles */
-article {
-    background: white;
-    border-radius: 10px; /* Rounded corners */
-    padding: 20px;
-    margin: 20px auto; /* Center articles with auto margins */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
-    max-width: 800px; /* Limit max width for readability */
-    transition: transform 0.3s; /* Transition for hover effect */
-}
-
-article:hover {
-    transform: scale(1.02); /* Slightly scale up on hover */
-}
-
-article h2 {
-    margin: 0;
-    font-size: 1.8em; /* Increased font size for article titles */
-    color: #333; /* Darker text for article titles */
-}
-
-/* Image Styles */
-article img {
-    width: 100%; /* Responsive image */
-    border-radius: 10px; /* Rounded corners */
-    height: auto;
-    margin: 10px 0; /* Space around images */
-}
-
-/* Paragraph Styles */
-article p {
-    line-height: 1.6; /* Better readability */
-    color: #555; /* Lighter color for paragraph text */
-    margin: 10px 0; /* Margin for paragraphs */
-}
-
-/* Button Styles */
-button {
-    background-color: #4A90E2; /* Button color */
-    color: white; /* Button text color */
-    border: none;
-    padding: 10px 20px; /* Increased padding for better touch targets */
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
-    display: inline-block; /* Inline block for proper spacing */
-}
-
-button:hover {
-    background-color: #357ABD; /* Darker blue on hover */
-    transform: translateY(-2px); /* Lift effect on hover */
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 15px 0;
-    background-color: #4A90E2; /* Match footer with nav */
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-
-
 
 /*Neurolink*/
 
@@ -115,7 +105,6 @@ footer {
     align-items: center;
 }
 
-/* Opener Sections */
 .neuro-section {
     position: relative;
     width: 100%;
@@ -128,7 +117,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-/* Background Images */
+
 #opener-1 { background-image: url("../photos/NeurolinkHeader.jpg"); }
 #opener-2 { background-image: url("../photos/beach.png"); }
 #opener-3 { background-image: url("../photos/dock.png"); }
@@ -136,7 +125,6 @@ footer {
 #opener-5 { background-image: url("../photos/lake.jpg"); }
 #opener-6 { background-image: url("../photos/hospital.png"); }
 
-/* Neuro Text Styling */
 .neuro-text, .neuro-text-black {
     padding: 20px;
     font-size: 1.5rem;
@@ -168,6 +156,7 @@ footer {
     align-items: center;
     padding: 10vh 5vw;
     color: #1a1a1a;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* Paragraph Containers */
@@ -287,10 +276,7 @@ footer {
 }
 
 /* --------------------------------------------------------------------------Isolation-------------------------------------------------------------------------- */
-.isolation-body{
-    background-color: #ece0e0;
-    
-}
+
 
 .isolation-main {
     display: flex;
@@ -300,6 +286,7 @@ footer {
     justify-content: center;
     margin: 0 auto; 
     background-color: white;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
 }
 .isolation-header {
     background-image: url("../photos/Article3/isolation-header.jpg");
@@ -309,12 +296,19 @@ footer {
     background-attachment: fixed;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     & h1 {
         color: white;
         font-size: 3rem;
         text-align: center;
         padding: 2rem;
         padding-top: 15rem;
+    }
+    & h2{
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+        padding: 5rem;
     }
 }
 .isolation-s1 {
@@ -609,6 +603,9 @@ footer {
         color: #333;
         margin-bottom: 1rem;
     }
+    & .IconGraph {
+        width: 100%;
+    }
 }
 .Connection-image {
     width: 90%;
@@ -626,7 +623,9 @@ footer {
         font-weight: bold; 
         line-height: 2rem;  
     }
-    
+    & .GGMF-image {
+        width: 100%;
+    }
    
     
 }
@@ -657,6 +656,9 @@ footer {
         font-size: 2rem;
         color: #333;
         margin-bottom: 1rem;
+    }
+    & .IconBridge {
+        width: 100%;
     }
 }
 .isolation-s10 {
@@ -750,7 +752,7 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #6c5ce7;
+    background-color: #a5a1c0;
     color: #fff;
     font-size: 1.2rem;
     padding: 0.8rem 1.5rem;
