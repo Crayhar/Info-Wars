@@ -34,20 +34,33 @@ export default function Ibelin() {
                   wheelchair to get around anywhere. As his body started failing him video games became more and more important, as it was really the only thing he could do on his own. 
                   He went through many consoles and many games over the years, but eventually discovered a whole new world. The game World of Warcraft (WoW).
               </p>
-              <p>
+             
+          </section>
+          <section className="Ib-s1">
+            <p>
                   Through Wow he could live the life he wanted and not be obstructed by his frail body. It was in Azeroth, the world which World of Warcraft is about, where he developed real and 
-                  close relationships with countless people who all knew him by the name of Ibelin. He got to know these people from all over Europe over several years, but unfortunately his body 
-                  couldn’t handle the condition much longer, and he passed away, a 25-year-old in 2014. His story was mostly unknown for several years, only really hitting the spotlight earlier this
-                  year when a Netflix documentary called “Ibelin” released to critical acclaim.
-              </p>
+                  close relationships with countless people who all knew him by the name of Ibelin. 
+            </p>
+          </section>
+          <section className="Ib-s1">
+            <p>
+              He got to know these people from all over Europe over several years, but unfortunately his body 
+              couldn’t handle the condition much longer, and he passed away, a 25-year-old in 2014. His story was mostly unknown for several years, only really hitting the spotlight earlier this
+              year when a Netflix documentary called “Ibelin” released to critical acclaim.
+            </p>
           </section>
           <section className="Ib-s1">
               <p>
                   While DMD is a rare genetic disorder, Mats is unfortunately not the only who suffered from this condition, and others still suffer from it. DMD almost only affects males, 
-                  and it affects over 300.000 people worldwide today. It impacts the bodies ability to produce dystrophin, a key muscle protein. Without it, cells become easily damaged resulting
+                  and it affects over 300.000 people worldwide today. 
+              </p>
+          </section>
+          <section className="Ib-s1">
+            <p>
+                  It impacts the bodies ability to produce dystrophin, a key muscle protein. Without it, cells become easily damaged resulting
                   in heart and breathing failure. The genetic disease is currently uncurable, but through the efforts of the people behind Cure Duchenne solutions such as gene therapy are being 
                   explored to cure both Duchenne and other similar genetic diseases. 
-              </p>
+            </p>
           </section>
         </section>
         <Link to="/" className="home-button">
