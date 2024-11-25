@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom"
-
+import BrokenBone from "../photos/Article4/BrokenBone@4x.png"
+import Dna from "../photos/Article4/Dna@4x.png"
+import ConnectionPlug from "../photos/Article4/ConnectionPlug@4x.png"
+import DMD_infograph from "../photos/Article4/DMD_infograph.jpg"
 
 export default function Ibelin() {
   return (
@@ -29,7 +32,7 @@ export default function Ibelin() {
                 Mats Steen used to be a lively boy who perhaps was a bit slower than other kids his age and would stumble more often, but otherwise a perfectly normal kid. 
               </p>
             </section>
-            <img src="src\photos\Article4\BrokenBone@4x.png" alt="gaming controller" className="controller-image" />
+            <img src={BrokenBone} alt="gaming controller" className="controller-image" />
           <section className="Ib-s2">
           <p>
                   His parents knew that he had DMD(Duchenne Muscular Dystrophy), but still hoped he would live as normal a life as possible. But over the years his body grew weaker and weaker until he was dependent on a 
@@ -38,14 +41,14 @@ export default function Ibelin() {
               </p>
              
           </section>
-          <img src="src\photos\Article4\Dna@4x.png" alt="graphic of dna" className="dna-image"/>
+          <img src={Dna} alt="graphic of dna" className="dna-image"/>
           <section className="Ib-s2">
             <p>
                   Through Wow he could live the life he wanted and not be obstructed by his frail body. It was in Azeroth, the world which World of Warcraft is about, where he developed real and 
                   close relationships with countless people who all knew him by the name of Ibelin. 
             </p>
           </section>
-          <img src="src\photos\Article4\ConnectionPlug@4x.png" alt="power plugs" className="plug-image"/>
+          <img src={ConnectionPlug} alt="power plugs" className="plug-image"/>
           <section className="Ib-s2">
             <p>
               He got to know these people from all over Europe over several years, but unfortunately his body 
@@ -53,7 +56,7 @@ export default function Ibelin() {
               year when a Netflix documentary called “Ibelin” released to critical acclaim.
             </p>
           </section>
-          <img src="src\photos\Article4\DMD_infograph.jpg" alt="infographic of DMD" className="DMD-image" />
+          <img src={DMD_infograph} alt="infographic of DMD" className="DMD-image" />
           <section className="Ib-last">
             <p>
                   It impacts the bodies ability to produce dystrophin, a key muscle protein. Without it, cells become easily damaged resulting
