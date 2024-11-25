@@ -53,7 +53,9 @@ const Oceangate_test = () => {
       return (
         <>
           <div className="parallax-container">
-            
+          <Link to="/" className="ocean-home-button">
+                    Home
+            </Link>
             <img
               src="src/photos/Article2/boat.png"
               alt="Floating Boat"
@@ -144,12 +146,12 @@ const Oceangate_test = () => {
           <h1>Rushing Forward</h1>
             <p>
               Through the years of tests, Rush could finally unveil his “Magnum Opus” so to say; the Titan. But it would seem all was not well in OceanGate-ville. 
-              Shortly after the announcement of the Titan, which could supposedly reach down to the titanic numerous professionals in the field urged rush to stop and slow down, according to
+              Shortly after the announcement of the Titan, which could supposedly reach down to the titanic numerous professionals in the field urged Rush to stop and slow down, according to
               <a href="https://www.nytimes.com/2023/06/23/us/titan-safety-warnings-titanic.html"> NYTimes.com</a> 
             </p>
             <p>
               As it turns out, the reason no one else uses carbon fiber for submarines is because it can’t handle as much pressure as a metal like titanium. 
-              Rush did not heed these warnings and decided that the whole industry was “obscenely safe” 
+              Rush did not care for these warnings and decided that the whole industry was “obscenely safe” 
             </p>
         </div>
         <div class="timeline-date">2017</div>
@@ -177,9 +179,7 @@ const Oceangate_test = () => {
        </div>
     </div>
 
-            <Link to="/" className="home-button">
-                    Home
-            </Link>
+            
     </>
   );
 };

@@ -65,6 +65,9 @@ export default function Isolation() {
             
         
              <main className="isolation-main">
+             <Link to="/" className="neuro-home-button">
+                    Home
+                </Link>  
                 <header className="isolation-header"> 
                     <h1>Isolation to Connection </h1>
                     <h2>The Rise of Online Gaming in the Pandemic</h2>
@@ -277,9 +280,7 @@ export default function Isolation() {
                         a testament to human creativity, resilience, and the enduring need for connection.    
                     </p>
                 </section>
-                <Link to="/" className="home-button">
-                    Home
-                </Link>     
+                   
              </main>
              </body>
         </>

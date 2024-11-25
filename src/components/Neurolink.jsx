@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 export default function Neurolink() {
     return (
         <main id="neuro-main">
+            <Link to="/" className="neuro-home-button">
+                    Home
+            </Link>
             <section id="neuro-opener">
                 <div className="neuro-section" id="opener-1">
                     <FadeInSection>
@@ -119,9 +122,7 @@ export default function Neurolink() {
                     </p>
                 </div>
             </section>
-            <Link to="/" className="home-button">
-                    Home
-            </Link> 
+             
         </main>
     );
 }

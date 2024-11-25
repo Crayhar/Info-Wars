@@ -5,6 +5,9 @@ export default function Ibelin() {
   return (
    <>
     <main className="Ib-main">
+    <Link to="/" className="neuro-home-button">
+            Home
+        </Link> 
         <header>
           <div className="Ib-intro">
             <h1>
@@ -63,9 +66,7 @@ export default function Ibelin() {
             </p>
           </section>
         </section>
-        <Link to="/" className="home-button">
-            Home
-        </Link> 
+       
     </main>
    </>
   )
