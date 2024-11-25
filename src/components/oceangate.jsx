@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Map1 from "./Map1";
 import Map2 from "./Map2"
 import boat from "../photos/Article2/boat.png"
-import oceangate from "../photos/Article2/oceangate.jpg"
+import oceangate from "../photos/Article2/Oceangate.jpg"
 
 
 const sentences = [
