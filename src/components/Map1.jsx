@@ -44,7 +44,7 @@ const MapComponent = () => {
   const mapRef = useRef(null);
 
   return (
-    <div id="map-container" style={{ height: "400px", width: "600px", margin: "50px auto", maxWidth: "80%" }}>
+    <div id="map-container" style={{ height: "400px", width: "100%", margin: "50px auto", maxWidth: "80%" }}>
       <MapContainer
         center={[51.505, -0.09]} // Coordinates for London
         zoom={10} // Initial zoom level
