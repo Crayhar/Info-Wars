@@ -2,6 +2,18 @@ import { React, useState } from 'react';
 import FadeInSection from './FadeInSection';
 import AnimatedBarChart from './AnimatedBarChart';
 import { Link } from 'react-router-dom';
+import IconController from "src\photos\Article3\IconController@4x.png"
+import AmongUsIcon from "src/photos/Article3/AmongUsIcon@4x.png"
+import AmongUsIconFlipped from "src/photos/Article3/AmongUsIconFlipped@4x.png"
+import Icon from "src\photos\Article3\Icon@4x.png"
+import Stine from "src\photos\Article3\Stine.jpg"
+import Icon1 from "src\photos\Article3\Icon1@4x.png"
+import Icon2 from "src\photos\Article3\Icon2@4x.png"
+import Icon3 from "src\photos\Article3\Icon3@4x.png"
+import IconGraph from "src\photos\Article3\IconGraph@4x.png"
+import Connection from "src\photos\Article3\Connection@4x.png"
+import GlobalGamesMarketChart from "src\photos\Article3\GlobalGamesMarketChart.png"
+import IconBridge from "src\photos\Article3\IconBridge@4x.png"
 
 
 const quizzes = [
@@ -91,7 +103,7 @@ export default function Isolation() {
                     </h2>
                 </section>
                     <div className="isolation-spinner-container">
-                        <img src="src\photos\Article3\IconController@4x.png" alt="Icon of a spinning controller" className="spinning-image"></img>
+                        <img src={IconController} alt="Icon of a spinning controller" className="spinning-image"></img>
                     </div>
                 <section className="isolation-s2">
                     <h3>The Pandemic's Surprise Star</h3>
@@ -103,7 +115,7 @@ export default function Isolation() {
                 </section>
                 <div className="image-animation-container">
                         <img
-                        src="src/photos/Article3/AmongUsIcon@4x.png"
+                        src={AmongUsIcon}
                         alt="Among us character runing across screen"
                         className="moving-image"
                         />
@@ -116,7 +128,7 @@ export default function Isolation() {
                 </section>  
                 <div className="image-animation-container-2">
                         <img
-                        src="src/photos/Article3/AmongUsIconFlipped@4x.png"
+                        src={AmongUsIconFlipped}
                         alt="Among us character runing across screen"
                         className="moving-image-2"
                         />
@@ -132,14 +144,14 @@ export default function Isolation() {
                         redefined this perception, bringing gaming into the mainstream as a way to forge bonds and bridge the gap of physical distance.
                     </p>
                 </section>     
-                <img src="src\photos\Article3\Icon@4x.png" alt="A PC-screen with a cable taking it down to the next section" className="FirstIlu" />              
+                <img src={Icon} alt="A PC-screen with a cable taking it down to the next section" className="FirstIlu" />              
                 <section className="isolation-s5">
                     <h2 className='Stine-pre'>
                         For Stine, a high school student, the pandemic was emotionally overwhelming. The abrupt shift to online school and separation
                         from her friends left her feeling isolated and depressed.
                     </h2>
                     <div className='stine-image-div'>
-                        <img src="src\photos\Article3\Stine.jpg" alt="image of Stine" className="stine-image"/>
+                        <img src={Stine} alt="image of Stine" className="stine-image"/>
                         <h4>Stine Vågnes</h4>
                     </div>
                     <FadeInSection>
@@ -164,7 +176,7 @@ export default function Isolation() {
                         For Stine, gaming was more than an escape—it was a lifeline that helped her manage the loneliness and stay connected.
                     </h2>
                 </section>
-                <img src="src\photos\Article3\Icon1@4x.png" alt="a cloud of gaming equipment" className="SecondIlu" />
+                <img src={Icon1} alt="a cloud of gaming equipment" className="SecondIlu" />
                 <section className="isolation-s6">
                     <h3>Gaming as a Social Hub</h3>
                     <p>
@@ -180,7 +192,7 @@ export default function Isolation() {
                     These virtual events became cultural moments, attracting millions of players and providing unique shared experiences in an otherwise fragmented world.
                     </p>
                 </section>
-                <img src="src\photos\Article3\Icon2@4x.png" alt="a icon of the connection of the world" className="SecondThirdIlu" />
+                <img src={Icon2} alt="a icon of the connection of the world" className="SecondThirdIlu" />
                 <section className="isolation-s6">
                     <h3>Balancing School and Play</h3>
                     <h2>
@@ -198,7 +210,7 @@ export default function Isolation() {
                         dual-edged sword of technology—a necessary tool for education but also a gateway to endless distractions.
                      </h2>
                 </section>
-                <img src="src\photos\Article3\Icon3@4x.png" alt="a keyboard" className="ThirdIlu" />
+                <img src={Icon3} alt="a keyboard" className="ThirdIlu" />
                 <section className="isolation-s7">
                     <h3>Gaming’s Lasting Impact</h3>
                     <p>
@@ -209,13 +221,13 @@ export default function Isolation() {
                         For many, the habits formed during lockdown persisted even after restrictions eased. Multiplayer games like Call of Duty: Warzone and League of Legends continued 
                         to thrive, as players discovered that gaming could be a way to stay connected even when traditional social opportunities returned.                    
                      </p>
-                     <img src="src\photos\Article3\IconGraph@4x.png" alt="a graph" className='IconGraph'/>
+                     <img src={IconGraph} alt="a graph" className='IconGraph'/>
                      <p>
                         Industry experts predict that the pandemic's gaming boom has permanently altered the entertainment landscape, with a growing recognition of gaming’s role in 
                         fostering community and well-being.
                      </p>
                 </section>
-                <img src="src\photos\Article3\Connection@4x.png" alt="a icon of people connecting" className="Connection-image" />
+                <img src={Connection} alt="a icon of people connecting" className="Connection-image" />
                 <section className="isolation-s8">
                     <p>
                         The surge in gaming brought significant economic growth to the industry.                    
@@ -225,7 +237,7 @@ export default function Isolation() {
                         according to <a className='link' href="https://newzoo.com/resources/blog/game-engagement-during-covid-pandemic-adds-15-billion-to-global-games-market-revenue-forecast">Newzoo.com</a>. Major titles like Animal Crossing: New Horizons broke sales records, while console shortages highlighted the 
                         skyrocketing demand for gaming hardware. 
                     </p>
-                    <img src="src\photos\Article3\GlobalGamesMarketChart.png" alt="a graph of global games market forcast" className='GGMF-image' />
+                    <img src={GlobalGamesMarketChart} alt="a graph of global games market forcast" className='GGMF-image' />
                     <p>
                         The industry also saw an expansion of esports and streaming, with platforms like YouTube Gaming and Twitch attracting millions of new viewers. This economic 
                         growth reflected gaming’s transformation from a casual activity to a vital cultural and social force.
@@ -237,7 +249,7 @@ export default function Isolation() {
                         Gaming during the pandemic offered more than just fun—it became a tool for emotional resilience. Research shows that gaming can reduce stress and anxiety, 
                         offering a structured way to engage with others and escape the challenges of daily life.                       
                     </h2>
-                        <img src="src\photos\Article3\IconBridge@4x.png" alt="two islands, with a bridge made out of controllers" className='IconBridge'/>
+                        <img src={IconBridge} alt="two islands, with a bridge made out of controllers" className='IconBridge'/>
                     <h2>
                         For players like Stine, gaming helped mitigate the mental health toll of isolation. Cooperative and multiplayer games provided not only entertainment but a 
                         sense of accomplishment and belonging.
