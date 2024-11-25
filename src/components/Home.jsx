@@ -18,7 +18,7 @@ export default function Home() {
       <main>
         <article className='home-article'>
             <h3>News story 1</h3>            
-            <img src="src\photos\Article1\image of guy.png" alt="man in wheelchair" />
+            <img src="src\photos\Article1\NolandHeader.png" alt="man in wheelchair" />
             <h2>A New Frontier in Overcoming Disability</h2>
             <p>
               After paralysis from a swimming accident, Noland Arbaugh regained independence through Neuralink, a brain-computer interface enabling device control via thought. 
@@ -32,7 +32,7 @@ export default function Home() {
         <article className='home-article'>
             <h3>News story 2</h3>
             <img src="src\photos\Article2\oceangate_banner.jpg" alt="image of the titan. submarine" />
-            <h2>Oceangate disaster</h2>
+            <h2>Oceangate Disaster</h2>
             <p>In June 2023, an OceanGate expedition to explore the Titanic ended in tragedy, raising questions about innovation, risk, and the pursuit of deep-sea exploration.</p>
             <Link to="/oceangate_test">
                 <button>Read More</button>
@@ -54,8 +54,8 @@ export default function Home() {
 
         <article className='home-article'>
             <h3>News story 4</h3>
-            <img src="https://placehold.co/300x200" alt="placehold" />
-            <h2>The connection through video games</h2>
+            <img src="src\photos\Article4\WoWHeader.jpeg" alt="photo of WoW characters" />
+            <h2>The WoW-player with a deadly disease</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
             <Link to="/ibelin">
               <button>Read More</button>
