@@ -34,11 +34,25 @@ export default function Home() {
             <img src="src\photos\Article2\oceangate_banner.jpg" alt="image of the titan. submarine" />
             <h2>Oceangate Disaster</h2>
             <p>In June 2023, an OceanGate expedition to explore the Titanic ended in tragedy, raising questions about innovation, risk, and the pursuit of deep-sea exploration.</p>
-            <Link to="/oceangate_test">
+            <Link to="/oceangate">
                 <button>Read More</button>
             </Link>
         </article>
 
+        
+
+        <article className='home-article'>
+            <h3>News story 3</h3>
+            <img src="src\photos\Article4\WoWHeader.jpeg" alt="photo of WoW characters" />
+            <h2>The WoW-player with a deadly disease</h2>
+            <p>
+              "Ibelin" is a Netflix documentary about Mats Steen, a Norwegian boy with Duchenne Muscular Dystrophy. 
+              Through World of Warcraft, he formed deep friendships, transcending his physical limitations.
+            </p>
+            <Link to="/ibelin">
+              <button>Read More</button>
+            </Link>
+        </article>
         <article className='home-article'>
             <h3>Long read</h3>
             <img src="src\photos\Article3\Isolation-header.jpg" alt="man infront of a gaming pc" />
@@ -52,40 +66,8 @@ export default function Home() {
             </Link>
         </article>
 
-        <article className='home-article'>
-            <h3>News story 4</h3>
-            <img src="src\photos\Article4\WoWHeader.jpeg" alt="photo of WoW characters" />
-            <h2>The WoW-player with a deadly disease</h2>
-            <p>
-              "Ibelin" is a Netflix documentary about Mats Steen, a Norwegian boy with Duchenne Muscular Dystrophy. 
-              Through World of Warcraft, he formed deep friendships, transcending his physical limitations.
-            </p>
-            <Link to="/ibelin">
-              <button>Read More</button>
-            </Link>
-        </article>
-
        
       </main>
     </>
   );
 }
-/*  <article>
-          <h2>Code examples</h2>
-
-          <img src={map} alt="image of map" />
-
-          <h3>Map zoomin</h3>
-
-          <Link to="/zoomin">
-            <button>Zoomin</button>
-          </Link>
-
-          <h3>Parallax</h3>
-
-          <img src="https://placehold.co/300x200" alt="placeholder" />
-
-          <Link to="/parallax">
-            <button>Paralax</button>
-          </Link>
-        </article>*/
