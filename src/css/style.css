@@ -271,7 +271,8 @@ main {
 
 /* --------------------------------------------------------------------------Isolation-------------------------------------------------------------------------- */
 
-.isolation-body{
+.isolation-body{ 
+
     background-color: white;
 }
 .isolation-main {
@@ -948,4 +949,67 @@ main {
       margin-top: 20px; /* Add some space from the content above */
       bottom: auto; /* Remove the absolute positioning */
     }
+  }
+
+  /* --------------------------------------------------------------------------Ibelin-------------------------------------------------------------------------- */
+
+  .Ib-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & header {
+        background-image: url(../photos/Article4/WoWHeader.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 180vh;
+
+        & .Ib-intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            & h1{
+                color: white;
+                background-color: #252525;
+                padding: 2rem;
+                font-size: 1.6rem;
+                width: 54vw;
+                border-radius: 1rem;
+            }
+        }
+
+        & .Ib-title {
+            height: 80vh;
+            width: 100vw;
+            & h2 {
+                color: white;
+                font-size: 5rem;
+                text-align: center;
+                font-weight: 900;
+            }
+        }
+        
+    } 
+    & .Ib-content {
+        width: 60vw;
+
+        & .Ib-s1 {
+            margin-top: 4rem;
+            padding: 1rem 8rem 1rem 8rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+
+            & p{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    
+    
+    
   }
