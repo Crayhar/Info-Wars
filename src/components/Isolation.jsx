@@ -2,18 +2,18 @@ import { React, useState } from 'react';
 import FadeInSection from './FadeInSection';
 import AnimatedBarChart from './AnimatedBarChart';
 import { Link } from 'react-router-dom';
-import IconController from "src\photos\Article3\IconController@4x.png"
+import IconController from "src/photos/Article3/IconController@4x.png"
 import AmongUsIcon from "src/photos/Article3/AmongUsIcon@4x.png"
 import AmongUsIconFlipped from "src/photos/Article3/AmongUsIconFlipped@4x.png"
-import Icon from "src\photos\Article3\Icon@4x.png"
-import Stine from "src\photos\Article3\Stine.jpg"
-import Icon1 from "src\photos\Article3\Icon1@4x.png"
-import Icon2 from "src\photos\Article3\Icon2@4x.png"
-import Icon3 from "src\photos\Article3\Icon3@4x.png"
-import IconGraph from "src\photos\Article3\IconGraph@4x.png"
-import Connection from "src\photos\Article3\Connection@4x.png"
-import GlobalGamesMarketChart from "src\photos\Article3\GlobalGamesMarketChart.png"
-import IconBridge from "src\photos\Article3\IconBridge@4x.png"
+import Icon from "src/photos/Article3/Icon@4x.png"
+import Stine from "src/photos/Article3/Stine.jpg"
+import Icon1 from "src/photos/Article3/Icon1@4x.png"
+import Icon2 from "src/photos/Article3/Icon2@4x.png"
+import Icon3 from "src/photos/Article3/Icon3@4x.png"
+import IconGraph from "src/photos/Article3/IconGraph@4x.png"
+import Connection from "src/photos/Article3/Connection@4x.png"
+import GlobalGamesMarketChart from "src/photos/Article3/GlobalGamesMarketChart.png"
+import IconBridge from "src/photos/Article3/IconBridge@4x.png"
 
 
 const quizzes = [
