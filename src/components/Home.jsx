@@ -1,5 +1,9 @@
 import '../css/style.css';
 import { Link } from "react-router-dom"; 
+import NolandHeader from "../photos/Article1/NolandHeader.png"
+import Oceangate from "../photos/Article2/Oceangate_banner.jpg"
+import WOW from "../photos/Article4/WoWHeader.jpeg"
+import Isolation from '../photos/Article3/Isolation-header.jpg';
 
 export default function Home() {
   return (
@@ -18,7 +22,7 @@ export default function Home() {
       <main>
         <article className='home-article'>
             <h3>News story 1</h3>            
-            <img src="src\photos\Article1\NolandHeader.png" alt="man in wheelchair" />
+            <img src={NolandHeader} alt="man in wheelchair" />
             <h2>A New Frontier in Overcoming Disability</h2>
             <p>
               After paralysis from a swimming accident, Noland Arbaugh regained independence through Neuralink, a brain-computer interface enabling device control via thought. 
@@ -31,7 +35,7 @@ export default function Home() {
 
         <article className='home-article'>
             <h3>News story 2</h3>
-            <img src="src\photos\Article2\oceangate_banner.jpg" alt="image of the titan. submarine" />
+            <img src={Oceangate} alt="image of the titan. submarine" />
             <h2>Oceangate Disaster</h2>
             <p>In June 2023, an OceanGate expedition to explore the Titanic ended in tragedy, raising questions about innovation, risk, and the pursuit of deep-sea exploration.</p>
             <Link to="/oceangate">
@@ -43,7 +47,7 @@ export default function Home() {
 
         <article className='home-article'>
             <h3>News story 3</h3>
-            <img src="src\photos\Article4\WoWHeader.jpeg" alt="photo of WoW characters" />
+            <img src={WOW} alt="photo of WoW characters" />
             <h2>The WoW-player with a deadly disease</h2>
             <p>
               "Ibelin" is a Netflix documentary about Mats Steen, a Norwegian boy with Duchenne Muscular Dystrophy. 
@@ -55,7 +59,7 @@ export default function Home() {
         </article>
         <article className='home-article'>
             <h3>Long read</h3>
-            <img src="src\photos\Article3\Isolation-header.jpg" alt="man infront of a gaming pc" />
+            <img src={Isolation} alt="man infront of a gaming pc" />
             <h2>The Rise of Online Gaming in the Pandemic</h2>
             <p>
               The pandemic caused a surge in online gaming, helping people stay connected while isolated. Games like Among Us became social lifelines, fostering emotional resilience,

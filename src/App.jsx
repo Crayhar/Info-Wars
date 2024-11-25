@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Neurolink from './components/Neurolink';
 import Isolation from "./components/Isolation";
 import ScrollToTop from "./components/ScrollToTop";
-import Oceangate from "./components/Oceangate";
+import Oceangate from "./components/oceangate";
 import Ibelin from "./components/Ibelin";
 
 
