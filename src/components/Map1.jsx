@@ -27,7 +27,7 @@ const ZoomableMap = () => {
 
       if (isInView && !zoomed) {
         setZoomed(true);
-        map.flyTo([37.7750278, -122.4192222], 13, { duration: 1.5 }); // Smooth zoom animation
+        map.flyTo([47.51947216110086, -122.29683632700319], 15, { duration: 1.5 }); // Smooth zoom animation
       }
     };
 
@@ -44,7 +44,7 @@ const MapComponent = () => {
   const mapRef = useRef(null);
 
   return (
-    <div id="map-container" style={{ height: "400px", width: "600px", margin: "50px auto" }}>
+    <div id="map-container" style={{ height: "400px", width: "600px", margin: "50px auto", maxWidth: "80%" }}>
       <MapContainer
         center={[51.505, -0.09]} // Coordinates for London
         zoom={10} // Initial zoom level
@@ -63,7 +63,7 @@ const MapComponent = () => {
         />
 
         {/* Add Marker */}
-        <Marker position={[37.7750278, -122.4192222]}>
+        <Marker position={[47.51947216110086, -122.29683632700319]}>
           <Popup>Map content here!</Popup>
         </Marker>
 

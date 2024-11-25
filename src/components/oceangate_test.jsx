@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import Map from "./Map";
+import { Link } from 'react-router-dom';
+import Map1 from "./Map1";
+import Map2 from "./Map2"
 
 const sentences = [
     "June 18th, 2023",
@@ -70,16 +72,24 @@ const Oceangate_test = () => {
         <section>
                 <h1>The Implosion of OceanGate</h1>
                 <h2>1962-1989</h2>
-                <p>Stockton Rush was born. He was someone who had always had a fascination with aviation and outer space, and thus he got a commercial pilot’s license by the time he was 18 years old. Over the years he worked in a lot of different aviation fields like being a flight test engineer for McDonnel Douglas who has now merged with Boeing, the airline manufacturer, and even the museum of flight.
+
+                <p>Stockton Rush was born.</p>
+                <p> He was someone who had always had a fascination with aviation and outer space, and thus he got a commercial pilot’s license by the time he was 18 years old. Over the years he worked in a lot of different aviation fields like being a flight test engineer for McDonnel Douglas who has now merged with Boeing, the airline manufacturer, and even the museum of flight.
                 </p>
-                <Map/>
             </section>
             
+            <Map1/>
             
             
             <section>
                 <h2>2006-2007</h2>
-                <p>Next to Rush’s love for aviation there was also a love for scuba diving. effectively making him conquer air, land and sea. Over time, scuba diving and exploring the depths of the ocean became more exciting to him. So he combined his knowledge of planes and scuba diving and wanted to get one for himself. However, upon finding that there are less than 100 privately owned submarines and being unable to buy one, Rush opted to build one himself using blueprints provided to him by a retired U.S. Navy. Rush was not satisfied with just this self-built machine, so he kept looking for a submarine for purchase. Still, he was unable to buy one, leading him to think about starting his own company for commercial underwater tourism. After all, if he was so determined to see the bottom of the ocean, surely other people would be too. 
+                <p>Next to Rush’s love for aviation there was also a love for scuba diving. effectively making him conquer air, land and sea. Over time, scuba diving and exploring the depths of the ocean became more exciting to him. So he combined his knowledge of planes and scuba diving and wanted to get one for himself.
+                </p>
+                <p>
+                However, upon finding that there are less than 100 privately owned submarines and being unable to buy one, Rush opted to build one himself using blueprints provided to him by a retired U.S. Navy. Rush was not satisfied with just this self-built machine, so he kept looking for a submarine for purchase. 
+                </p>
+                <p>
+                Still, he was unable to buy one, leading him to think about starting his own company for commercial underwater tourism. After all, if he was so determined to see the bottom of the ocean, surely other people would be too. 
                 </p>
             </section>
 
@@ -93,7 +103,7 @@ const Oceangate_test = () => {
                 <h2>2013</h2>
                 <p>After a few years of small trials with self-made submarines and old, retired submarines who could only dive a maximum of 150 meters, Rush wanted to go deeper. At this point Söhnlein gracefully stepped out of the game as he felt he could no longer contribute much and that this was now Rush’s territory. Following this, Rush made his first titan submarine. The Cyclops 1, which could dive 
                 </p>
-                <img className='oceangate_boat' src="src/photos/Article2/oceangate.png" alt="Image of the oceangate submarine" />
+                <img className='oceangate_boat' src="src/photos/Article2/oceangate.jpg" alt="Image of the oceangate submarine" />
                 <p>
                 Made out of carbon fiber it was significantly cheaper, yet less structurally sound than other submarines. Still, it ended up being a success for OceanGate. With the success of the Cyclops 1, OceanGate could run many more tests.
                 </p>
@@ -113,15 +123,19 @@ const Oceangate_test = () => {
                 <h2>2022-2023</h2>
                 <p>The Titan could never quite make it down to the titanic and had to be delayed for public viewing several times to make it safer and better.
                 </p>
+                
                 <p>Eventually the Titan was viewed safe enough internally for the public to take a trip down to the old wreckage of the Titanic, however it would appear it actually wasn’t safe enough. The entire vessel imploded near the Titanic, crushing Stockton Rush and 4 customers who just wanted to see the Titanic. 
                 </p>
             </section>
+            <Map2/>
 
             <section>
                 <h2>End?</h2>
                 <p>Truly, a horrible fate. Maybe, if Rush had slowed down and listened to the professionals he could have avoided this fate and saved not just his own, but 4 innocent people’s lives. He wanted to innovate, but innovation without precaution is madness. And maybe that was the real Implosion of SeaGate.</p>
             </section>
-        
+            <Link to="/" className="home-button">
+                    Home
+            </Link> 
       </div>
     </>
   );

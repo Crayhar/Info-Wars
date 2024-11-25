@@ -848,11 +848,19 @@ main {
 /* Article section */
 .article {
   padding: 2em;
+  margin: 0 auto;
   background: white;
   color: black;
   min-height: 100vh;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 0px 15px black;
 }
 
 .article.visible {
@@ -860,7 +868,9 @@ main {
 }
 
 .oceangate_boat {
-    width: 50%
+    width: 40vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
 }
 
 

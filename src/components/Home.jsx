@@ -31,9 +31,9 @@ export default function Home() {
 
         <article>
             <h3>News story 2</h3>
-            <img src="https://placehold.co/300x200" alt="placehold" />
-            <h2>Oceangate diaster</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
+            <img src="src\photos\Article2\oceangate_banner.jpg" alt="image of the titan. submarine" />
+            <h2>Oceangate disaster</h2>
+            <p>In June 2023, an OceanGate expedition to explore the Titanic ended in tragedy, raising questions about innovation, risk, and the pursuit of deep-sea exploration.</p>
             <Link to="/oceangate_test">
                 <button>Read More</button>
             </Link>
@@ -55,7 +55,7 @@ export default function Home() {
         <article>
             <h3>News story 4</h3>
             <img src="https://placehold.co/300x200" alt="placehold" />
-            <h2>Temp 4</h2>
+            <h2>The connection through video games</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
             <button>Read More</button>
         </article>
