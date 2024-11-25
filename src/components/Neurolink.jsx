@@ -2,6 +2,20 @@ import { React } from 'react';
 import FadeInSection from './FadeInSection';
 import { Link } from 'react-router-dom';
 
+// Image Import
+import NeurolinkHeader from '../photos/article1/NeurolinkHeader.jpg';
+import Beach from '../photos/article1/beach.png';
+import Dock from '../photos/article1/dock.png';
+import Black from '../photos/article1/black.jpg';
+import Lake from '../photos/article1/lake.jpg';
+import Hospital from '../photos/article1/hospital.png';
+import Surgery from '../photos/article1/NeuroLink-Surgery.jpg';
+import Medicine from '../photos/article1/Neurolink-Medicine.jpg';
+import Noland from '../photos//Article1/Noland.png'
+import TechBackground from "../photos/article1/NeuroLink-Surgery.jpg"
+import MedecineBackground from "../photos/article1/Neurolink-Medicine.jpg"
+
+
 export default function Neurolink() {
     return (
         <main id="neuro-main">
@@ -9,14 +23,14 @@ export default function Neurolink() {
                     Home
             </Link>
             <section id="neuro-opener">
-                <div className="neuro-section" id="opener-1">
+                <div className="neuro-section" id="opener-1" style={{ backgroundImage: `url(${NeurolinkHeader})`}}>
                     <FadeInSection>
                         <p className="neuro-text">
                             One ordinary summer day, a man takes a swimming trip with some of his friends.
                         </p>
                     </FadeInSection>
                 </div>
-                <div className="neuro-section" id="opener-2">
+                <div className="neuro-section" id="opener-2" style={{ backgroundImage: `url(${Beach})`}}>
                     <FadeInSection>
                         <p className="neuro-text">
                             On the walk there a friend yelled “Last one there is a rotten egg!”. A race had begun.
@@ -24,26 +38,26 @@ export default function Neurolink() {
                         </p>
                     </FadeInSection>
                 </div>
-                <div className="neuro-section" id="opener-3">
+                <div className="neuro-section" id="opener-3" style={{ backgroundImage: `url(${Dock})`}}>
                     <FadeInSection>
                         <p className="neuro-text">
                             Not wanting to be a rotten egg, the man ran ahead of his friends and dove in, as he had done many times before.
                         </p>
                     </FadeInSection>
                 </div>
-                <div className="neuro-section" id="opener-4">
+                <div className="neuro-section" id="opener-4" style={{ backgroundImage: `url(${Black})`}}>
                     <FadeInSection>
                         <p className="neuro-text-black">Suddenly everything went black...</p>
                     </FadeInSection>
                 </div>
-                <div className="neuro-section" id="opener-5">
+                <div className="neuro-section" id="opener-5" style={{ backgroundImage: `url(${Lake})`}}>
                     <FadeInSection>
                         <p className="neuro-text">
                             His friends stood confused as they saw his seemingly lifeless body float up to the surface.
                         </p>
                     </FadeInSection>
                 </div>
-                <div className="neuro-section" id="opener-6">
+                <div className="neuro-section" id="opener-6" style={{ backgroundImage: `url(${Hospital})`}}>
                     <FadeInSection>
                         <p className="neuro-text">
                             The next thing he knew, he was in the hospital, unable to move more than his head.
@@ -53,13 +67,13 @@ export default function Neurolink() {
             </section>
             <section id="neuro-content">
                 <div className="paragraph-container-2">
-                    <img src="src\photos\Article1\Noland.png" alt="picture of Noland" className='Noland-image'/>
+                    <img src={Noland} alt="picture of Noland" className='Noland-image'/>
                     <p>
                         This is what happened to Noland Arbaugh in 2016. After diving in the water, he hit his head hard on something under the water,
                         causing paralysis from the neck down. The Neuralink changed this man’s life; can it change others too?
                     </p>
                 </div>
-                <div className="tech-background">
+                <div className="tech-background" style={{ backgroundImage: `url(${TechBackground})`}}>
                     <FadeInSection>
                         <div className="paragraph-container">
                             <p>
@@ -84,7 +98,7 @@ export default function Neurolink() {
                         When he thought about moving his arm forward, the cursor moved upward. And when he tapped with a finger, the cursor clicked.
                     </p>
                 </div>
-                <div className="medicine-background">
+                <div className="medicine-background" style={{ backgroundImage: `url(${MedecineBackground})`}}>
                     <FadeInSection>
                         <div className="paragraph-container">
                             <p>
