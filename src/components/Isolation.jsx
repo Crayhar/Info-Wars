@@ -2,6 +2,7 @@ import { React, useState } from 'react';
 import FadeInSection from './FadeInSection';
 import AnimatedBarChart from './AnimatedBarChart';
 import { Link } from 'react-router-dom';
+import IsolationHeader from "../photos/Article3/Isolation-header.jpg"
 import IconController from "../photos/Article3/IconController@4x.png"
 import AmongUsIcon from "../photos/Article3/AmongUsIcon@4x.png"
 import AmongUsIconFlipped from "../photos/Article3/AmongUsIconFlipped@4x.png"
@@ -80,7 +81,7 @@ export default function Isolation() {
              <Link to="/" className="neuro-home-button">
                     Home
                 </Link>  
-                <header className="isolation-header"> 
+                <header className="isolation-header" style={{ backgroundImage: `url(${IsolationHeader})`}}> 
                     <h1>Isolation to Connection </h1>
                     <h2>The Rise of Online Gaming in the Pandemic</h2>
                 </header>
