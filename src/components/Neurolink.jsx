@@ -50,6 +50,7 @@ export default function Neurolink() {
             </section>
             <section id="neuro-content">
                 <div className="paragraph-container-2">
+                    <img src="src\photos\Article1\Noland.png" alt="picture of Noland" className='Noland-image'/>
                     <p>
                         This is what happened to Noland Arbaugh in 2016. After diving in the water, he hit his head hard on something under the water,
                         causing paralysis from the neck down. The Neuralink changed this man’s life; can it change others too?

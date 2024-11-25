@@ -11,7 +11,6 @@ const App = () => {
                 <p>Praesent in congue nunc. Vivamus consequat sapien at nunc fermentum, sit amet euismod magna scelerisque. Quisque sed mauris neque. Phasellus varius dolor quis convallis bibendum. Vestibulum tincidunt ex ut eros dapibus, non facilisis mi posuere. Nulla facilisi. Duis id orci a est cursus egestas.</p>
             </div>
 
-            {/* Map in the background */}
             <MapWithScrollZoom />
 
             <div style={{ padding: '50px', maxWidth: '800px', margin: 'auto', textAlign: 'center' }}>

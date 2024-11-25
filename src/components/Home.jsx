@@ -7,7 +7,7 @@ export default function Home() {
       <header>
         <nav>
           <h1>Eksamen i Kommunikasjonsdesign Høst 2024</h1>
-          <h2>Kandidatnummer: 455, 474, 477 og D</h2>
+          <h2>Kandidatnummer: 455, 474, 477 og 416</h2>
         </nav>
         <section className="introduction">
           <h1>Welcome to our exam project. We have created 4 different news articles, which have their own personality and touch. Using different modalities and elements, like maps, 
@@ -16,7 +16,7 @@ export default function Home() {
       </header>
       
       <main>
-        <article>
+        <article className='home-article'>
             <h3>News story 1</h3>            
             <img src="src\photos\Article1\image of guy.png" alt="man in wheelchair" />
             <h2>A New Frontier in Overcoming Disability</h2>
@@ -29,7 +29,7 @@ export default function Home() {
             </Link>
         </article>
 
-        <article>
+        <article className='home-article'>
             <h3>News story 2</h3>
             <img src="src\photos\Article2\oceangate_banner.jpg" alt="image of the titan. submarine" />
             <h2>Oceangate disaster</h2>
@@ -39,7 +39,7 @@ export default function Home() {
             </Link>
         </article>
 
-        <article>
+        <article className='home-article'>
             <h3>Long read</h3>
             <img src="src\photos\Article3\Isolation-header.jpg" alt="man infront of a gaming pc" />
             <h2>The Rise of Online Gaming in the Pandemic</h2>
@@ -52,7 +52,7 @@ export default function Home() {
             </Link>
         </article>
 
-        <article>
+        <article className='home-article'>
             <h3>News story 4</h3>
             <img src="https://placehold.co/300x200" alt="placehold" />
             <h2>The connection through video games</h2>

@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-
-// Fix marker icons for Leaflet
 import markerIcon from "leaflet/dist/images/marker-icon.png";
 import markerShadow from "leaflet/dist/images/marker-shadow.png";
 
@@ -14,7 +12,6 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-// Component to handle map zoom-in effect
 const ZoomableMap = () => {
   const map = useMap();
   const [zoomed, setZoomed] = useState(false);
@@ -27,7 +24,7 @@ const ZoomableMap = () => {
 
       if (isInView && !zoomed) {
         setZoomed(true);
-        map.flyTo([47.51947216110086, -122.29683632700319], 15, { duration: 1.5 }); // Smooth zoom animation
+        map.flyTo([47.51947216110086, -122.29683632700319], 15, { duration: 1.5 }); 
       }
     };
 
@@ -35,7 +32,7 @@ const ZoomableMap = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [map, zoomed]);
 
-  return null; // This component only manages the map's zoom behavior
+  return null; 
 };
 
 const MapComponent = () => {
@@ -46,28 +43,23 @@ const MapComponent = () => {
   return (
     <div id="map-container" style={{ height: "400px", width: "100%", margin: "50px auto", maxWidth: "80%" }}>
       <MapContainer
-        center={[51.505, -0.09]} // Coordinates for London
-        zoom={10} // Initial zoom level
+        center={[51.505, -0.09]} 
+        zoom={10}
         style={{ height: "100%", width: "100%", borderRadius: "15px", boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)"}}
-        zoomControl={zoomEnabled} // Enable or disable zoom controls dynamically
-        scrollWheelZoom={zoomEnabled} // Enable or disable scroll zoom
+        zoomControl={zoomEnabled} 
+        scrollWheelZoom={zoomEnabled} 
         whenCreated={(map) => {
           mapRef.current = map;
-          mapRef.current.scrollWheelZoom.disable(); // Disable zoom initially
+          mapRef.current.scrollWheelZoom.disable(); 
         }}
       >
-        {/* Add Tile Layer */}
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         />
-
-        {/* Add Marker */}
         <Marker position={[47.51947216110086, -122.29683632700319]}>
           <Popup>Map content here!</Popup>
         </Marker>
-
-        {/* Handle zoom-in behavior */}
         <ZoomableMap />
       </MapContainer>
     </div>

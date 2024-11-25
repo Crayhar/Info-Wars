@@ -22,6 +22,11 @@ const sentences = [
     "",
     "",
     "",
+    "",
+    "",
+    "",
+    "",
+    "",
   ];
   
   
@@ -32,7 +37,7 @@ const Oceangate_test = () => {
     useEffect(() => {
         const handleScroll = () => {
           const scrollY = window.scrollY;
-          const segmentHeight = window.innerHeight / 6; // Adjust this value for smoother transitions
+          const segmentHeight = window.innerHeight / 6; 
           const newIndex = Math.min(
             sentences.length,
             Math.floor(scrollY / segmentHeight)
@@ -48,7 +53,7 @@ const Oceangate_test = () => {
       return (
         <>
           <div className="parallax-container">
-            <section className='OceanStart'>
+            
             <img
               src="src/photos/Article2/boat.png"
               alt="Floating Boat"
@@ -62,12 +67,12 @@ const Oceangate_test = () => {
                 className={`sentence-container ${
                   activeIndex === index ? "active" : ""
                 } ${index % 2 === 0 ? "left" : "right"}`}
-                style={{ top: `${index * 100}vh` }} // Stack sentences vertically
+                style={{ top: `${index * 100}vh` }} 
               >
                 <p>{sentence}</p>
               </div>
             ))}
-            </section>
+           
             <div className="parallax-bottom-text">
               <div class="timeline-item">
                 <div class="timeline-article">
@@ -103,11 +108,15 @@ const Oceangate_test = () => {
         <div class="timeline-article">
           <h1>Redefining Undersea Tourism</h1>
           <p>
-            Rush was proven correct. However, despite the market for undersea tourism <a href="https://www.popsci.com/deep-sea-tourism/">Popsci.com</a> consumers commonly believed that 
-            submarines were very dangerous, something he believed was “understandable but illogical.” 
-            <a href="https://www.smithsonianmag.com/innovation/worlds-first-deep-diving-submarine-plans-tourists-see-titanic-180972179/">Smithsonianmag.com</a> 
-            Thus OceanGate was founded with his co-partner Guillermo Söhnlein <a href="https://www.miamitodaynews.com/news/120705/story2.shtml">miamitodaynews.com</a> with the mission of promoting
-            undersea tourism while also gaining funding for more and better research into underwater exploration.
+            Rush was proven correct in his belief that there was a market for undersea tourism. However, many consumers remained wary, as they viewed submarines as very dangerous. 
+            This sentiment, according to <a href="https://www.popsci.com/deep-sea-tourism/">Popsci.com</a>, was understandable but, in Rush's view, "illogical". Despite these concerns, Rush pressed forward with his vision, believing in the safety 
+            and potential of underwater exploration.
+          </p>
+          <p>
+            Thus OceanGate was founded with his co-partner Guillermo Söhnlein  with the mission of promoting
+            undersea tourism while also gaining funding for more and better research into underwater exploration, highlighted by 
+            <a href="https://www.smithsonianmag.com/innovation/worlds-first-deep-diving-submarine-plans-tourists-see-titanic-180972179/"> Smithsonianmag.com</a> and
+            <a href="https://www.miamitodaynews.com/news/120705/story2.shtml"> miamitodaynews.com</a>.
           </p> 
         </div>
         <div class="timeline-date">2009</div>
@@ -135,7 +144,7 @@ const Oceangate_test = () => {
           <h1>Rushing Forward</h1>
             <p>
               Through the years of tests, Rush could finally unveil his “Magnum Opus” so to say; the Titan. But it would seem all was not well in OceanGate-ville. 
-              Shortly after the announcement of the Titan, which could supposedly reach down to the titanic numerous professionals in the field urged rush to stop and slow down
+              Shortly after the announcement of the Titan, which could supposedly reach down to the titanic numerous professionals in the field urged rush to stop and slow down, according to
               <a href="https://www.nytimes.com/2023/06/23/us/titan-safety-warnings-titanic.html"> NYTimes.com</a> 
             </p>
             <p>
