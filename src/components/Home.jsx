@@ -1,7 +1,7 @@
 import '../css/style.css';
 import { Link } from "react-router-dom"; 
 import NolandHeader from "../photos/Article1/NolandHeader.png"
-import Oceangate from "../photos/Article2/Oceangate_banner.jpg"
+import Oceangate from "../photos/Article2/oceangate_banner.jpg"
 import WOW from "../photos/Article4/WoWHeader.jpeg"
 import Isolation from '../photos/Article3/Isolation-header.jpg';
 
