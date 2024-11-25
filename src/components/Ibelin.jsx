@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import FadeInSection from "./FadeInSection"
+
 
 export default function Ibelin() {
   return (
@@ -23,16 +23,15 @@ export default function Ibelin() {
           </div>
         </header>
         <section className="Ib-content">
-          <FadeInSection>
+     
             <section className="Ib-s1">
               <p>
                 Mats Steen used to be a lively boy who perhaps was a bit slower than other kids his age and would stumble more often, but otherwise a perfectly normal kid. 
               </p>
             </section>
-          </FadeInSection>
+  
           <section className="Ib-s1">
           <p>
-                  
                   His parents knew that he had DMD(Duchenne Muscular Dystrophy), but still hoped he would live as normal a life as possible. But over the years his body grew weaker and weaker until he was dependent on a 
                   wheelchair to get around anywhere. As his body started failing him video games became more and more important, as it was really the only thing he could do on his own. 
                   He went through many consoles and many games over the years, but eventually discovered a whole new world. The game World of Warcraft (WoW).
@@ -45,6 +44,7 @@ export default function Ibelin() {
                   close relationships with countless people who all knew him by the name of Ibelin. 
             </p>
           </section>
+          
           <section className="Ib-s1">
             <p>
               He got to know these people from all over Europe over several years, but unfortunately his body 
@@ -52,12 +52,7 @@ export default function Ibelin() {
               year when a Netflix documentary called “Ibelin” released to critical acclaim.
             </p>
           </section>
-          <section className="Ib-s1">
-              <p>
-                  While DMD is a rare genetic disorder, Mats is unfortunately not the only who suffered from this condition, and others still suffer from it. DMD almost only affects males, 
-                  and it affects over 300.000 people worldwide today. 
-              </p>
-          </section>
+          <img src="src\photos\Article4\DMD_infograph.jpg" alt="infographic of DMD" className="DMD-image" />
           <section className="Ib-s1">
             <p>
                   It impacts the bodies ability to produce dystrophin, a key muscle protein. Without it, cells become easily damaged resulting

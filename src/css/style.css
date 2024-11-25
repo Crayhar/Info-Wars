@@ -1133,6 +1133,9 @@ main {
     } 
     & .Ib-content {
         width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         & .Ib-s1 {
             margin-top: 4rem;
@@ -1147,7 +1150,70 @@ main {
         }
     }
     
+    .DMD-image {
+        width: 80%;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 1rem;
+        margin: 5rem 0 5rem 0;
+
+    }
     
     
+  }
+
+  @media screen and (max-width: 900px) {
+    .Ib-main {
+    header{
+        & .Ib-intro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+            & h1{
+                color: white;
+                background-color: #252525;
+                padding: 1rem;
+                font-size: 1.4rem;
+                width: 80%;
+                border-radius: 1rem;
+            }
+        }
+        & .Ib-title {
+            & h2{
+                font-size: 3rem;
+            }
+        }
+
+       
+    }
     
+    & .Ib-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .Ib-s1 {
+            width: 80%;
+           
+            margin-top: 4rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+    
+            & p{
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 1.6rem;
+            }
+        }
+        
+        .DMD-image {
+            width: 90%;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 1rem;
+            margin: 5rem 0 5rem 0;
+    
+        }
+    }
+}
   }

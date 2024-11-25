@@ -56,7 +56,10 @@ export default function Home() {
             <h3>News story 4</h3>
             <img src="src\photos\Article4\WoWHeader.jpeg" alt="photo of WoW characters" />
             <h2>The WoW-player with a deadly disease</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
+            <p>
+              "Ibelin" is a Netflix documentary about Mats Steen, a Norwegian boy with Duchenne Muscular Dystrophy. 
+              Through World of Warcraft, he formed deep friendships, transcending his physical limitations.
+            </p>
             <Link to="/ibelin">
               <button>Read More</button>
             </Link>
