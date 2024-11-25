@@ -3,17 +3,15 @@ import FadeInSection from './FadeInSection';
 import { Link } from 'react-router-dom';
 
 // Image Import
-import NeurolinkHeader from '../photos/article1/NeurolinkHeader.jpg';
-import Beach from '../photos/article1/beach.png';
-import Dock from '../photos/article1/dock.png';
-import Black from '../photos/article1/black.jpg';
-import Lake from '../photos/article1/lake.jpg';
-import Hospital from '../photos/article1/hospital.png';
-import Surgery from '../photos/article1/NeuroLink-Surgery.jpg';
-import Medicine from '../photos/article1/Neurolink-Medicine.jpg';
+import NeurolinkHeader from '../photos/Article1/NeurolinkHeader.jpg';
+import Beach from '../photos/Article1/beach.png';
+import Dock from '../photos/Article1/dock.png';
+import Black from '../photos/Article1/black.jpg';
+import Lake from '../photos/Article1/lake.jpg';
+import Hospital from '../photos/Article1/hospital.png';
 import Noland from '../photos//Article1/Noland.png'
-import TechBackground from "../photos/article1/NeuroLink-Surgery.jpg"
-import MedecineBackground from "../photos/article1/Neurolink-Medicine.jpg"
+import TechBackground from "../photos/Article1/NeuroLink-Surgery.jpg"
+import MedecineBackground from "../photos/Article1/Neurolink-Medicine.jpg"
 
 
 export default function Neurolink() {
