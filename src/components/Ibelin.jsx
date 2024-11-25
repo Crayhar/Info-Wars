@@ -30,7 +30,7 @@ export default function Ibelin() {
           <section className="Ib-s1">
           <p>
                   
-                  His parents knew that he had DMD, but still hoped he would live as normal a life as possible. But over the years his body grew weaker and weaker until he was dependent on a 
+                  His parents knew that he had DMD(Duchenne Muscular Dystrophy), but still hoped he would live as normal a life as possible. But over the years his body grew weaker and weaker until he was dependent on a 
                   wheelchair to get around anywhere. As his body started failing him video games became more and more important, as it was really the only thing he could do on his own. 
                   He went through many consoles and many games over the years, but eventually discovered a whole new world. The game World of Warcraft (WoW).
               </p>
