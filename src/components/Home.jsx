@@ -57,7 +57,9 @@ export default function Home() {
             <img src="https://placehold.co/300x200" alt="placehold" />
             <h2>Temp 4</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ipsa, obcaecati commodi, natus rem.</p>
-            <button>Read More</button>
+            <Link to="/ibelin">
+              <button>Read More</button>
+            </Link>
         </article>
 
        
