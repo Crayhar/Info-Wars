@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Map1 from "./Map1";
 import Map2 from "./Map2"
+import boat from "../photos/Article2/boat.png"
+import oceangate from "../photos/Article2/oceangate.jpg"
 
 
 const sentences = [
@@ -57,7 +59,7 @@ const Oceangate = () => {
                     Home
             </Link>
             <img
-              src="src/photos/Article2/boat.png"
+              src={boat}
               alt="Floating Boat"
               className={`floating-boat ${
                 activeIndex === sentences.length ? "hidden" : ""
@@ -132,7 +134,7 @@ const Oceangate = () => {
               At this point Söhnlein gracefully stepped out of the game as he felt he could no longer contribute much and that this was now Rush’s territory. Following this, 
               Rush made his first titan submarine. The Cyclops 1, which could dive 
             </p>
-            <img className='oceangate_boat' src="src/photos/Article2/oceangate.jpg" alt="Image of the oceangate submarine" />
+            <img className={oceangate} src="src/photos/Article2/oceangate.jpg" alt="Image of the oceangate submarine" />
             <p>
               Made out of carbon fiber it was significantly cheaper, yet less structurally sound than other submarines. Still, it ended up being a success for OceanGate. 
               With the success of the Cyclops 1, OceanGate could run many more tests.
