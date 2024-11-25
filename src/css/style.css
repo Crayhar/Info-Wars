@@ -782,33 +782,37 @@ main {
 
 .oceangate {
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
 }
 
-  
 /* Parallax container */
 .parallax-container {
-    position: relative;
-    height: 500vh; /* Enough space to scroll through all sentences */
-    overflow: hidden;
-    background: linear-gradient(to bottom, #003366, #006699); /* Underwater effect */
-    color: white;
-  }
-  
-  /* Floating boat */
-  .floating-boat {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 200px;
-    animation: float 3s ease-in-out infinite;
-    z-index: 2;
-  }
-  
-  @keyframes float {
+  position: relative;
+  height: calc(100vh * 5); /* Adjust height to fit all sentences */
+  overflow: hidden;
+  background: linear-gradient(to bottom, #006699, #003366); /* Underwater effect */
+  color: white;
+}
+
+/* Floating boat */
+.floating-boat {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 200px;
+  animation: float 3s ease-in-out infinite;
+  z-index: 2;
+  transition: opacity 1s ease-in-out;
+}
+
+.floating-boat.hidden {
+  opacity: 0;
+}
+
+@keyframes float {
     0%, 100% {
       transform: translate(-50%, -10px);
     }
@@ -816,34 +820,47 @@ main {
       transform: translate(-50%, 10px);
     }
   }
-  
-  /* Sentence container */
-  .sentence-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
-  }
-  
-  .sentence-container.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Article section */
-  .article {
-    padding: 2em;
-    background: white;
-    color: black;
-    min-height: 100vh;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .article.visible {
-    opacity: 1;
-  }
-  
+
+/* Sentence container */
+.sentence-container {
+  position: absolute;
+  width: 50%;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.sentence-container.left {
+  left: 10%;
+  text-align: left;
+}
+
+.sentence-container.right {
+  right: 10%;
+  text-align: left;
+}
+
+/* Paragraph styling */
+.sentence-container p {
+  font-size: 1.5rem;
+  margin: 10;
+}
+
+/* Article section */
+.article {
+  padding: 2em;
+  background: white;
+  color: black;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.article.visible {
+  opacity: 1;
+}
+
+.oceangate_boat {
+    width: 50%
+}
+
+
